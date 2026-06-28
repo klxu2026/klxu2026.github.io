@@ -343,7 +343,7 @@
         }
         .visitor-map {
             position: relative;
-            height: 104px;
+            min-height: 118px;
             overflow: hidden;
             border: 1px solid var(--gray-light);
             border-radius: var(--border-radius);
@@ -356,7 +356,7 @@
             width: 100%;
             height: 100%;
             object-fit: fill;
-            opacity: 0.78;
+            opacity: 0.72;
         }
 
         .visitor-map-pin {
@@ -383,6 +383,30 @@
             font-weight: 600;
             line-height: 1.25;
             z-index: 2;
+        }
+
+        .clustrmaps-widget {
+            min-height: 118px;
+        }
+
+        .clustrmaps-widget:not(:empty) + .clustrmaps-placeholder {
+            display: none;
+        }
+
+        .clustrmaps-placeholder {
+            position: relative;
+            min-height: 118px;
+        }
+
+        .clustrmaps-note {
+            color: var(--gray);
+            font-size: 0.76rem;
+            line-height: 1.3;
+            margin-top: 0.35rem;
+        }
+
+        .clustrmaps-note a {
+            font-weight: 600;
         }
 
         .info-item {
@@ -1039,11 +1063,15 @@
                                 <span id="visitor-locale">...</span>
                             </div>
                         </div>
-                        <div class="visitor-map" aria-label="Approximate visitor map based on browser timezone">
-                            <img class="visitor-map-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Equirectangular_projection_SW.jpg/640px-Equirectangular_projection_SW.jpg" alt="World map background" loading="lazy">
-                            <div class="visitor-map-pin" id="visitor-map-pin"></div>
-                            <div class="visitor-map-label" id="visitor-map-label">Locating from timezone...</div>
+                        <div class="visitor-map" aria-label="ClustrMaps-style visitor map">
+                            <div class="clustrmaps-widget" id="clustrmaps-widget"></div>
+                            <div class="clustrmaps-placeholder" id="clustrmaps-placeholder">
+                                <img class="visitor-map-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Equirectangular_projection_SW.jpg/640px-Equirectangular_projection_SW.jpg" alt="World map background" loading="lazy">
+                                <div class="visitor-map-pin" id="visitor-map-pin"></div>
+                                <div class="visitor-map-label" id="visitor-map-label">Locating from timezone...</div>
+                            </div>
                         </div>
+                        <div class="clustrmaps-note" id="clustrmaps-note">ClustrMaps-style fallback. Add your ClustrMaps widget ID to enable live global visitor tracking.</div>
                     </div>
                 </div>
                 <div class="sidebar-card">
@@ -1375,6 +1403,9 @@
             initializeVisitorStats();
         });
         
+        // Set this to the d= value from your ClustrMaps embed code to enable live visitor maps.
+        const CLUSTMAPS_WIDGET_ID = '';
+
         // ===== 本地访客统计 =====
         function initializeVisitorStats() {
             const countEl = document.getElementById('visitor-local-count');
@@ -1400,6 +1431,25 @@
             const approximateLocation = getApproximateVisitorLocation(timeZone);
             localeEl.textContent = `${timeZone} / ${language}`;
             updateVisitorMap(approximateLocation, timeZone);
+            initializeClustrMapsWidget();
+        }
+        function initializeClustrMapsWidget() {
+            const widget = document.getElementById('clustrmaps-widget');
+            const note = document.getElementById('clustrmaps-note');
+            if (!widget || !CLUSTMAPS_WIDGET_ID) return;
+
+            widget.innerHTML = '';
+            const script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.id = 'clustrmaps';
+            script.src = `https://cdn.clustrmaps.com/map_v2.js?cl=0056b3&w=220&t=tt&d=${encodeURIComponent(CLUSTMAPS_WIDGET_ID)}`;
+            script.onload = () => {
+                if (note) note.textContent = 'Live visitor map powered by ClustrMaps.';
+            };
+            script.onerror = () => {
+                if (note) note.textContent = 'ClustrMaps could not load; showing fallback map.';
+            };
+            widget.appendChild(script);
         }
         function getApproximateVisitorLocation(timeZone) {
             const locations = {

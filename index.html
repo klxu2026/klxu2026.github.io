@@ -343,20 +343,20 @@
         }
         .visitor-map {
             position: relative;
-            height: 92px;
+            height: 104px;
             overflow: hidden;
             border: 1px solid var(--gray-light);
             border-radius: var(--border-radius);
-            background:
-                linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px),
-                linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px),
-                radial-gradient(circle at 24% 38%, rgba(0, 86, 179, 0.18) 0 8%, transparent 8.5%),
-                radial-gradient(circle at 48% 32%, rgba(0, 86, 179, 0.2) 0 10%, transparent 10.5%),
-                radial-gradient(circle at 70% 45%, rgba(0, 86, 179, 0.2) 0 12%, transparent 12.5%),
-                radial-gradient(circle at 82% 72%, rgba(0, 86, 179, 0.16) 0 7%, transparent 7.5%),
-                linear-gradient(135deg, #eaf5fb, #f8fbfd);
-            background-size: 28px 28px, 28px 28px, auto, auto, auto, auto, auto;
+            background: linear-gradient(135deg, #eaf5fb, #f8fbfd);
             margin-top: 0.25rem;
+        }
+        .visitor-map-image {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+            opacity: 0.78;
         }
 
         .visitor-map-pin {
@@ -370,6 +370,7 @@
             border: 2px solid white;
             box-shadow: 0 0 0 4px rgba(255, 136, 0, 0.2);
             transform: translate(-50%, -50%);
+            z-index: 2;
         }
 
         .visitor-map-label {
@@ -381,6 +382,7 @@
             font-size: 0.78rem;
             font-weight: 600;
             line-height: 1.25;
+            z-index: 2;
         }
 
         .info-item {
@@ -1038,6 +1040,7 @@
                             </div>
                         </div>
                         <div class="visitor-map" aria-label="Approximate visitor map based on browser timezone">
+                            <img class="visitor-map-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Equirectangular_projection_SW.jpg/640px-Equirectangular_projection_SW.jpg" alt="World map background" loading="lazy">
                             <div class="visitor-map-pin" id="visitor-map-pin"></div>
                             <div class="visitor-map-label" id="visitor-map-label">Locating from timezone...</div>
                         </div>
@@ -1078,7 +1081,7 @@
                 </div>
                 
                 <div class="filter-buttons">
-					<button class="filter-btn" data-year="2026">2026</button>
+					<button class="filter-btn active" data-year="2026">2026</button>
                     <button class="filter-btn" data-year="2025">2025</button>
                     <button class="filter-btn" data-year="2024">2024</button>
                     <button class="filter-btn" data-year="2023">2023</button>
@@ -1086,7 +1089,7 @@
                     <button class="filter-btn" data-year="2021">2021</button>
                     <button class="filter-btn" data-year="2020">2020</button>
                     <button class="filter-btn" data-year="2019">2019</button>
-                    <button class="filter-btn active" data-year="all">All Years</button>
+                    <button class="filter-btn" data-year="all">All Years</button>
                 </div>
                 
                 <!-- News Container -->
@@ -1358,7 +1361,7 @@
             initializePublicationsData();
             
             // 加载初始数据
-            loadNews();
+            loadNews(allNewsData.filter(news => news.date.startsWith("2026")));
             loadAwards();
             loadPublications();
             

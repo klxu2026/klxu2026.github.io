@@ -985,35 +985,11 @@
                     </div>
                 </div>
                 <div class="sidebar-card">
-                    <h3>Visitor Stats</h3>
-                    <div class="visitor-stats">
-                        <div class="visitor-stat-item">
-                            <i class="fas fa-chart-line"></i>
-                            <div>
-                                <strong>Local Visits</strong>
-                                <span id="visitor-local-count">...</span>
-                            </div>
-                        </div>
-                        <div class="visitor-stat-item">
-                            <i class="fas fa-clock"></i>
-                            <div>
-                                <strong>Last Visit</strong>
-                                <span id="visitor-last-visit">...</span>
-                            </div>
-                        </div>
-                        <div class="visitor-stat-item">
-                            <i class="fas fa-location-dot"></i>
-                            <div>
-                                <strong>Approx. Locale</strong>
-                                <span id="visitor-locale">...</span>
-                            </div>
-                        </div>
-                        <a class="flag-counter-map" href="https://info.flagcounter.com/luuM" target="_blank" rel="noopener">
-                            <img src="https://s01.flagcounter.com/map/luuM/size_s/txt_000000/border_CCCCCC/pageviews_1/viewers_0/flags_0/" alt="Flag Counter" border="0">
-                        </a>
-                    </div>
-                </div>
-                <div class="sidebar-card">
+                    <h3>Visitor Map</h3>
+                    <a class="flag-counter-map" href="https://info.flagcounter.com/luuM" target="_blank" rel="noopener">
+                        <img src="https://s01.flagcounter.com/map/luuM/size_s/txt_000000/border_CCCCCC/pageviews_1/viewers_0/flags_0/" alt="Flag Counter" border="0">
+                    </a>
+                </div>                <div class="sidebar-card">
                     <h3>External Links</h3>
                     <ul class="sidebar-links">
                         <li><a href="https://www.kaggle.com/kelexu/competitions" target="_blank"><i class="fab fa-kaggle"></i> Kaggle Profile</a></li>
@@ -1337,36 +1313,7 @@
             
             // 设置筛选功能
             setupFilterFunctionality();
-            
-            // 初始化本地访客统计
-            initializeVisitorStats();
         });
-        
-
-        // ===== 本地访客统计 =====
-        function initializeVisitorStats() {
-            const countEl = document.getElementById('visitor-local-count');
-            const lastVisitEl = document.getElementById('visitor-last-visit');
-            const localeEl = document.getElementById('visitor-locale');
-            if (!countEl || !lastVisitEl || !localeEl) return;
-
-            const storageKey = 'kele-xu-local-visit-count';
-            const lastVisitKey = 'kele-xu-last-visit';
-            const previousCount = Number(localStorage.getItem(storageKey) || '0');
-            const currentCount = previousCount + 1;
-            const now = new Date();
-            const previousVisit = localStorage.getItem(lastVisitKey);
-
-            localStorage.setItem(storageKey, String(currentCount));
-            localStorage.setItem(lastVisitKey, now.toISOString());
-
-            countEl.textContent = `${currentCount} visits from this browser`;
-            lastVisitEl.textContent = previousVisit ? new Date(previousVisit).toLocaleString() : 'First visit from this browser';
-
-            const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone || 'Unknown timezone';
-            const language = navigator.language || 'Unknown language';
-            localeEl.textContent = `${timeZone} / ${language}`;
-        }
         // ===== 新闻数据处理 =====
         function initializeNewsData() {
             // 原始新闻数据 - 从原始HTML中提取的所有新闻，按时间倒序排列

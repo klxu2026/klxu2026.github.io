@@ -311,43 +311,14 @@
             gap: 0.7rem;
             font-size: 0.9rem;
         }
-        .visitor-stats {
-            display: grid;
-            gap: 0.45rem;
-            font-size: 0.88rem;
-        }
-
-        .visitor-stat-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 0.5rem;
-        }
-
-        .visitor-stat-item i {
-            color: var(--accent);
-            margin-top: 0.15rem;
-            width: 16px;
-            text-align: center;
-        }
-
-        .visitor-stat-item strong {
-            display: block;
-            color: var(--primary-dark);
-            font-size: 0.82rem;
-            line-height: 1.25;
-        }
-
-        .visitor-stat-item span {
-            color: var(--dark);
-            line-height: 1.35;
-        }
         .flag-counter-map {
             display: block;
             text-align: center;
-            margin-top: 0.35rem;
+            margin: 0.5rem auto 0;
         }
 
         .flag-counter-map img {
+            width: min(100%, 760px);
             max-width: 100%;
             height: auto;
             border-radius: var(--border-radius);
@@ -985,11 +956,6 @@
                     </div>
                 </div>
                 <div class="sidebar-card">
-                    <h3>Visitor Map</h3>
-                    <a class="flag-counter-map" href="https://info.flagcounter.com/luuM" target="_blank" rel="noopener">
-                        <img src="https://s01.flagcounter.com/map/luuM/size_s/txt_000000/border_CCCCCC/pageviews_1/viewers_0/flags_0/" alt="Flag Counter" border="0">
-                    </a>
-                </div>                <div class="sidebar-card">
                     <h3>External Links</h3>
                     <ul class="sidebar-links">
                         <li><a href="https://www.kaggle.com/kelexu/competitions" target="_blank"><i class="fab fa-kaggle"></i> Kaggle Profile</a></li>
@@ -1176,6 +1142,15 @@
                     <li>CCF BDCI Competition. [<a href="https://www.datafountain.cn/competitions/484">Link</a>]</li>
                 </ul>
                 
+            </section>
+            <!-- Visitor Map Section -->
+            <section id="visitor-map">
+                <div class="section-header">
+                    <h2>Visitor Map</h2>
+                </div>
+                <a class="flag-counter-map" href="https://info.flagcounter.com/luuM" target="_blank" rel="noopener">
+                    <img src="https://s01.flagcounter.com/map/luuM/size_l/txt_000000/border_CCCCCC/pageviews_1/viewers_0/flags_0/" alt="Flag Counter" border="0">
+                </a>
             </section>
         </main>
     </div>

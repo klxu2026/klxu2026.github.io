@@ -311,76 +311,27 @@
             gap: 0.7rem;
             font-size: 0.9rem;
         }
-        .visitor-stats {
-            display: grid;
-            gap: 0.45rem;
-            font-size: 0.88rem;
-        }
-
-        .visitor-stat-item {
+        .visitor-widget {
             display: flex;
-            align-items: flex-start;
-            gap: 0.5rem;
-        }
-
-        .visitor-stat-item i {
-            color: var(--accent);
-            margin-top: 0.15rem;
-            width: 16px;
-            text-align: center;
-        }
-
-        .visitor-stat-item strong {
-            display: block;
-            color: var(--primary-dark);
-            font-size: 0.82rem;
-            line-height: 1.25;
-        }
-
-        .visitor-stat-item span {
-            color: var(--dark);
-            line-height: 1.35;
-        }
-        .visitor-map {
-            position: relative;
-            height: 92px;
+            min-height: 130px;
+            align-items: center;
+            justify-content: center;
             overflow: hidden;
             border: 1px solid var(--gray-light);
             border-radius: var(--border-radius);
-            background:
-                linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px),
-                linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px),
-                radial-gradient(circle at 24% 38%, rgba(0, 86, 179, 0.18) 0 8%, transparent 8.5%),
-                radial-gradient(circle at 48% 32%, rgba(0, 86, 179, 0.2) 0 10%, transparent 10.5%),
-                radial-gradient(circle at 70% 45%, rgba(0, 86, 179, 0.2) 0 12%, transparent 12.5%),
-                radial-gradient(circle at 82% 72%, rgba(0, 86, 179, 0.16) 0 7%, transparent 7.5%),
-                linear-gradient(135deg, #eaf5fb, #f8fbfd);
-            background-size: 28px 28px, 28px 28px, auto, auto, auto, auto, auto;
-            margin-top: 0.25rem;
+            background-color: #f8fbfd;
+            text-align: center;
         }
 
-        .visitor-map-pin {
-            position: absolute;
-            left: 50%;
-            top: 45%;
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: var(--secondary);
-            border: 2px solid white;
-            box-shadow: 0 0 0 4px rgba(255, 136, 0, 0.2);
-            transform: translate(-50%, -50%);
+        .visitor-widget-placeholder {
+            padding: 0.9rem;
+            color: var(--gray);
+            font-size: 0.86rem;
+            line-height: 1.45;
         }
 
-        .visitor-map-label {
-            position: absolute;
-            left: 0.55rem;
-            bottom: 0.45rem;
-            max-width: calc(100% - 1.1rem);
-            color: var(--primary-dark);
-            font-size: 0.78rem;
+        .visitor-widget-placeholder a {
             font-weight: 600;
-            line-height: 1.25;
         }
 
         .info-item {
@@ -1014,32 +965,12 @@
                     </div>
                 </div>
                 <div class="sidebar-card">
-                    <h3>Visitor Stats</h3>
-                    <div class="visitor-stats">
-                        <div class="visitor-stat-item">
-                            <i class="fas fa-chart-line"></i>
-                            <div>
-                                <strong>Local Visits</strong>
-                                <span id="visitor-local-count">...</span>
-                            </div>
-                        </div>
-                        <div class="visitor-stat-item">
-                            <i class="fas fa-clock"></i>
-                            <div>
-                                <strong>Last Visit</strong>
-                                <span id="visitor-last-visit">...</span>
-                            </div>
-                        </div>
-                        <div class="visitor-stat-item">
-                            <i class="fas fa-location-dot"></i>
-                            <div>
-                                <strong>Approx. Locale</strong>
-                                <span id="visitor-locale">...</span>
-                            </div>
-                        </div>
-                        <div class="visitor-map" aria-label="Approximate visitor map based on browser timezone">
-                            <div class="visitor-map-pin" id="visitor-map-pin"></div>
-                            <div class="visitor-map-label" id="visitor-map-label">Locating from timezone...</div>
+                    <h3>Visitor Map</h3>
+                    <div class="visitor-widget" id="clustrmaps-widget" data-clustrmaps-key="">
+                        <div class="visitor-widget-placeholder">
+                            ClustrMaps widget is ready. Generate a site key at
+                            <a href="https://clustrmaps.com/" target="_blank" rel="noopener">ClustrMaps</a>
+                            and paste it into <code>data-clustrmaps-key</code>.
                         </div>
                     </div>
                 </div>
@@ -1368,80 +1299,23 @@
             // 设置筛选功能
             setupFilterFunctionality();
             
-            // 初始化本地访客统计
-            initializeVisitorStats();
+            // Load optional third-party visitor map widget.
+            loadClustrMapsWidget();
         });
         
-        // ===== 本地访客统计 =====
-        function initializeVisitorStats() {
-            const countEl = document.getElementById('visitor-local-count');
-            const lastVisitEl = document.getElementById('visitor-last-visit');
-            const localeEl = document.getElementById('visitor-locale');
-            if (!countEl || !lastVisitEl || !localeEl) return;
+        // ===== ClustrMaps widget loader =====
+        function loadClustrMapsWidget() {
+            const widget = document.getElementById('clustrmaps-widget');
+            if (!widget) return;
 
-            const storageKey = 'kele-xu-local-visit-count';
-            const lastVisitKey = 'kele-xu-last-visit';
-            const previousCount = Number(localStorage.getItem(storageKey) || '0');
-            const currentCount = previousCount + 1;
-            const now = new Date();
-            const previousVisit = localStorage.getItem(lastVisitKey);
+            const key = (widget.dataset.clustrmapsKey || '').trim();
+            if (!key) return;
 
-            localStorage.setItem(storageKey, String(currentCount));
-            localStorage.setItem(lastVisitKey, now.toISOString());
-
-            countEl.textContent = `${currentCount} visits from this browser`;
-            lastVisitEl.textContent = previousVisit ? new Date(previousVisit).toLocaleString() : 'First visit from this browser';
-
-            const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone || 'Unknown timezone';
-            const language = navigator.language || 'Unknown language';
-            const approximateLocation = getApproximateVisitorLocation(timeZone);
-            localeEl.textContent = `${timeZone} / ${language}`;
-            updateVisitorMap(approximateLocation, timeZone);
-        }
-        function getApproximateVisitorLocation(timeZone) {
-            const locations = {
-                'Asia/Shanghai': { label: 'China', lat: 35.9, lon: 104.2 },
-                'Asia/Hong_Kong': { label: 'Hong Kong', lat: 22.3, lon: 114.2 },
-                'Asia/Taipei': { label: 'Taiwan', lat: 23.7, lon: 121.0 },
-                'Asia/Tokyo': { label: 'Japan', lat: 36.2, lon: 138.3 },
-                'Asia/Seoul': { label: 'South Korea', lat: 36.5, lon: 127.8 },
-                'Asia/Singapore': { label: 'Singapore', lat: 1.35, lon: 103.8 },
-                'Asia/Kolkata': { label: 'India', lat: 22.9, lon: 78.9 },
-                'Europe/London': { label: 'United Kingdom', lat: 54.0, lon: -2.0 },
-                'Europe/Paris': { label: 'France', lat: 46.2, lon: 2.2 },
-                'Europe/Berlin': { label: 'Germany', lat: 51.2, lon: 10.4 },
-                'America/New_York': { label: 'Eastern United States', lat: 40.7, lon: -74.0 },
-                'America/Chicago': { label: 'Central United States', lat: 41.9, lon: -87.6 },
-                'America/Denver': { label: 'Mountain United States', lat: 39.7, lon: -105.0 },
-                'America/Los_Angeles': { label: 'Western United States', lat: 34.1, lon: -118.2 },
-                'America/Toronto': { label: 'Canada', lat: 43.7, lon: -79.4 },
-                'Australia/Sydney': { label: 'Australia', lat: -33.9, lon: 151.2 }
-            };
-
-            if (locations[timeZone]) return locations[timeZone];
-
-            const region = timeZone.split('/')[0];
-            const fallback = {
-                Asia: { label: 'Asia', lat: 34, lon: 100 },
-                Europe: { label: 'Europe', lat: 50, lon: 10 },
-                America: { label: 'Americas', lat: 38, lon: -97 },
-                Africa: { label: 'Africa', lat: 0, lon: 20 },
-                Australia: { label: 'Australia', lat: -25, lon: 134 },
-                Pacific: { label: 'Pacific region', lat: -15, lon: -150 }
-            };
-            return fallback[region] || { label: 'Unknown region', lat: 20, lon: 0 };
-        }
-
-        function updateVisitorMap(location, timeZone) {
-            const pin = document.getElementById('visitor-map-pin');
-            const label = document.getElementById('visitor-map-label');
-            if (!pin || !label || !location) return;
-
-            const x = ((location.lon + 180) / 360) * 100;
-            const y = ((90 - location.lat) / 180) * 100;
-            pin.style.left = `${Math.min(96, Math.max(4, x))}%`;
-            pin.style.top = `${Math.min(92, Math.max(8, y))}%`;
-            label.textContent = `${location.label} (${timeZone})`;
+            const script = document.createElement('script');
+            script.id = 'clustrmaps';
+            script.async = true;
+            script.src = `https://cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=220&t=tt&d=${encodeURIComponent(key)}&co=0056b3&ct=ffffff&cmo=ff8800&cmn=00a8cc`;
+            widget.replaceChildren(script);
         }
         // ===== 新闻数据处理 =====
         function initializeNewsData() {

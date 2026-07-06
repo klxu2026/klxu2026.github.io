@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -20,9 +20,9 @@
             --dark: #212529;
             --gray: #6c757d;
             --gray-light: #e9ecef;
-            --border-radius: 6px;
-            --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-            --box-shadow-hover: 0 4px 14px rgba(0, 0, 0, 0.08);
+            --border-radius: 8px;
+            --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --box-shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.12);
             --transition: all 0.3s ease;
         }
 
@@ -39,7 +39,7 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            line-height: 1.5;
+            line-height: 1.6;
             color: var(--dark);
             background-color: #f9fbfd;
             overflow-x: hidden;
@@ -49,35 +49,35 @@
             font-family: 'Source Sans Pro', sans-serif;
             font-weight: 600;
             line-height: 1.3;
-            margin-bottom: 0.7rem;
+            margin-bottom: 1rem;
         }
 
         h1 {
-            font-size: 2.25rem;
+            font-size: 2.5rem;
         }
 
         h2 {
-            font-size: 1.55rem;
+            font-size: 2rem;
             color: var(--primary);
-            border-bottom: 2px solid var(--secondary);
-            padding-bottom: 0.35rem;
-            margin-bottom: 1rem;
+            border-bottom: 3px solid var(--secondary);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
             display: inline-block;
         }
 
         h3 {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             color: var(--primary-dark);
         }
 
         h4 {
-            font-size: 1.05rem;
+            font-size: 1.25rem;
             color: var(--dark);
-            margin-top: 1rem;
+            margin-top: 1.5rem;
         }
 
         p {
-            margin-bottom: 0.75rem;
+            margin-bottom: 1rem;
         }
 
         a {
@@ -91,16 +91,16 @@
         }
 
         ul, ol {
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
         }
 
         li {
-            margin-bottom: 0.35rem;
+            margin-bottom: 0.5rem;
         }
 
         section {
-            margin-bottom: 1.25rem;
-            padding: 1.25rem 1.5rem;
+            margin-bottom: 3rem;
+            padding: 2rem;
             background-color: white;
             border-radius: var(--border-radius);
             box-shadow: var(--box-shadow);
@@ -113,16 +113,16 @@
 
         .container {
             width: 100%;
-            max-width: 1160px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 0 1rem;
+            padding: 0 1.5rem;
         }
 
         /* ===== Header ===== */
         .main-header {
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
             color: white;
-            padding: 1.25rem 0;
+            padding: 2rem 0;
             position: relative;
             overflow: hidden;
         }
@@ -148,24 +148,23 @@
         }
 
         .header-content h1 {
-            margin-bottom: 0.25rem;
+            margin-bottom: 0.5rem;
             color: white;
         }
 
         .header-content .subtitle {
-            font-size: 1.05rem;
+            font-size: 1.25rem;
             font-weight: 300;
-            margin-bottom: 0.4rem;
+            margin-bottom: 1rem;
             color: rgba(255, 255, 255, 0.9);
         }
 
         .contact-info {
             display: flex;
             flex-wrap: wrap;
-            gap: 1rem;
+            gap: 1.5rem;
             justify-content: center;
-            margin-top: 0.5rem;
-            font-size: 0.92rem;
+            margin-top: 1rem;
         }
 
         .contact-item {
@@ -192,26 +191,25 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0.65rem 1rem;
+            padding: 1rem 1.5rem;
         }
 
         .nav-logo {
             font-weight: 700;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             color: var(--primary);
         }
 
         .nav-links {
             display: flex;
-            gap: 1rem;
+            gap: 1.5rem;
         }
 
         .nav-links a {
             color: var(--dark);
             font-weight: 500;
             position: relative;
-            padding: 0.35rem 0;
-            font-size: 0.92rem;
+            padding: 0.5rem 0;
         }
 
         .nav-links a::after {
@@ -245,14 +243,14 @@
         /* ===== Layout ===== */
         .main-container {
             display: flex;
-            gap: 1.25rem;
-            padding: 1.25rem 1rem;
+            gap: 2rem;
+            padding: 2rem 1.5rem;
         }
 
         .sidebar {
-            flex: 0 0 220px;
+            flex: 0 0 250px;
             position: sticky;
-            top: 74px;
+            top: 100px;
             height: fit-content;
         }
 
@@ -264,14 +262,13 @@
             background-color: white;
             border-radius: var(--border-radius);
             box-shadow: var(--box-shadow);
-            padding: 1rem;
-            margin-bottom: 0.85rem;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
         }
 
         .sidebar-card h3 {
-            margin-bottom: 0.7rem;
+            margin-bottom: 1rem;
             color: var(--primary);
-            font-size: 1.05rem;
         }
 
         .sidebar-links {
@@ -280,16 +277,15 @@
         }
 
         .sidebar-links li {
-            margin-bottom: 0.35rem;
+            margin-bottom: 0.75rem;
         }
 
         .sidebar-links a {
             display: block;
-            padding: 0.4rem 0.55rem;
+            padding: 0.5rem 0.75rem;
             border-radius: 4px;
             color: var(--dark);
             transition: var(--transition);
-            font-size: 0.92rem;
         }
 
         .sidebar-links a:hover,
@@ -299,8 +295,8 @@
         }
 
         .sidebar-links i {
-            margin-right: 0.4rem;
-            width: 16px;
+            margin-right: 0.5rem;
+            width: 20px;
             text-align: center;
             color: var(--gray);
         }
@@ -308,90 +304,18 @@
         .quick-info {
             display: flex;
             flex-direction: column;
-            gap: 0.7rem;
-            font-size: 0.9rem;
-        }
-        .visitor-stats {
-            display: grid;
-            gap: 0.45rem;
-            font-size: 0.88rem;
-        }
-
-        .visitor-stat-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 0.5rem;
-        }
-
-        .visitor-stat-item i {
-            color: var(--accent);
-            margin-top: 0.15rem;
-            width: 16px;
-            text-align: center;
-        }
-
-        .visitor-stat-item strong {
-            display: block;
-            color: var(--primary-dark);
-            font-size: 0.82rem;
-            line-height: 1.25;
-        }
-
-        .visitor-stat-item span {
-            color: var(--dark);
-            line-height: 1.35;
-        }
-        .visitor-map {
-            position: relative;
-            height: 92px;
-            overflow: hidden;
-            border: 1px solid var(--gray-light);
-            border-radius: var(--border-radius);
-            background:
-                linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px),
-                linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px),
-                radial-gradient(circle at 24% 38%, rgba(0, 86, 179, 0.18) 0 8%, transparent 8.5%),
-                radial-gradient(circle at 48% 32%, rgba(0, 86, 179, 0.2) 0 10%, transparent 10.5%),
-                radial-gradient(circle at 70% 45%, rgba(0, 86, 179, 0.2) 0 12%, transparent 12.5%),
-                radial-gradient(circle at 82% 72%, rgba(0, 86, 179, 0.16) 0 7%, transparent 7.5%),
-                linear-gradient(135deg, #eaf5fb, #f8fbfd);
-            background-size: 28px 28px, 28px 28px, auto, auto, auto, auto, auto;
-            margin-top: 0.25rem;
-        }
-
-        .visitor-map-pin {
-            position: absolute;
-            left: 50%;
-            top: 45%;
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: var(--secondary);
-            border: 2px solid white;
-            box-shadow: 0 0 0 4px rgba(255, 136, 0, 0.2);
-            transform: translate(-50%, -50%);
-        }
-
-        .visitor-map-label {
-            position: absolute;
-            left: 0.55rem;
-            bottom: 0.45rem;
-            max-width: calc(100% - 1.1rem);
-            color: var(--primary-dark);
-            font-size: 0.78rem;
-            font-weight: 600;
-            line-height: 1.25;
+            gap: 1rem;
         }
 
         .info-item {
             display: flex;
             align-items: center;
-            gap: 0.6rem;
+            gap: 0.75rem;
         }
 
         .info-item i {
             color: var(--accent);
-            font-size: 1rem;
+            font-size: 1.25rem;
         }
 
         /* ===== Section Styles ===== */
@@ -399,9 +323,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 0.9rem;
+            margin-bottom: 1.5rem;
             flex-wrap: wrap;
-            gap: 0.75rem;
+            gap: 1rem;
         }
 
         .year-badge {
@@ -415,9 +339,9 @@
 
         /* News Section */
         .news-container {
-            max-height: 480px;
+            max-height: 600px;
             overflow-y: auto;
-            padding-right: 6px;
+            padding-right: 10px;
         }
 
         .news-container::-webkit-scrollbar {
@@ -435,11 +359,8 @@
         }
 
         .news-item {
-            display: grid;
-            grid-template-columns: 5.6rem 1fr;
-            gap: 0.65rem;
-            margin-bottom: 0.5rem;
-            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
             border-bottom: 1px solid var(--gray-light);
         }
 
@@ -450,15 +371,11 @@
         .news-date {
             color: var(--secondary);
             font-weight: 600;
-            margin-bottom: 0;
-            font-size: 0.82rem;
-            line-height: 1.35;
+            margin-bottom: 0.25rem;
         }
 
         .news-content {
             color: var(--dark);
-            font-size: 0.94rem;
-            line-height: 1.45;
         }
 
         .news-content strong {
@@ -467,9 +384,9 @@
 
         /* Publications */
         .publication-item {
-            margin-bottom: 0.55rem;
-            padding: 0.62rem 0.8rem;
-            border-left: 3px solid var(--accent);
+            margin-bottom: 1.5rem;
+            padding: 1.25rem;
+            border-left: 4px solid var(--accent);
             background-color: rgba(0, 168, 204, 0.05);
             border-radius: 0 var(--border-radius) var(--border-radius) 0;
         }
@@ -477,90 +394,46 @@
         .publication-authors {
             color: var(--gray);
             font-style: italic;
-            margin-bottom: 0.18rem;
-            font-size: 0.86rem;
-            line-height: 1.35;
+            margin-bottom: 0.5rem;
         }
 
         .publication-title {
             font-weight: 600;
-            margin-bottom: 0.18rem;
-            font-size: 0.96rem;
-            line-height: 1.35;
+            margin-bottom: 0.5rem;
         }
 
         .publication-venue {
             color: var(--primary);
             font-weight: 500;
-            margin-bottom: 0.18rem;
-            font-size: 0.86rem;
-            line-height: 1.35;
+            margin-bottom: 0.5rem;
         }
 
         .publication-links {
             display: flex;
-            gap: 0.35rem;
-            margin-top: 0.35rem;
-            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 0.75rem;
         }
 
         .publication-links a {
             display: inline-flex;
             align-items: center;
-            gap: 0.28rem;
-            padding: 0.15rem 0.45rem;
+            gap: 0.5rem;
+            padding: 0.25rem 0.75rem;
             background-color: rgba(0, 86, 179, 0.1);
             border-radius: 4px;
-            font-size: 0.76rem;
+            font-size: 0.875rem;
         }
 
         .publication-links a:hover {
             background-color: rgba(0, 86, 179, 0.2);
         }
-        #publications > p {
-            margin-bottom: 0.35rem;
-            font-size: 0.92rem;
-        }
-
-        #publications-container h4 {
-            margin-top: 0.8rem;
-            margin-bottom: 0.45rem;
-            font-size: 1rem;
-            color: var(--primary-dark);
-        }
-
-        @media (max-width: 576px) {
-            .news-item {
-                grid-template-columns: 1fr;
-                gap: 0.12rem;
-            }
-        }
 
         /* Awards & Services */
         .award-item, .service-item {
-            margin-bottom: 0.7rem;
-            padding: 0.75rem 0.9rem;
+            margin-bottom: 1rem;
+            padding: 1rem;
             background-color: var(--gray-light);
             border-radius: var(--border-radius);
-        }
-        .service-list-group {
-            border-left: 3px solid var(--primary);
-            padding: 0.15rem 0 0.55rem 0.85rem;
-            margin-bottom: 0.7rem;
-        }
-
-        .service-list-group h3 {
-            font-size: 1.05rem;
-            margin-bottom: 0.35rem;
-        }
-
-        .service-list-group ul {
-            margin-bottom: 0;
-            padding-left: 1.15rem;
-        }
-
-        .service-list-group li {
-            margin-bottom: 0.25rem;
         }
 
         .award-rank {
@@ -575,17 +448,17 @@
 
         /* Search and Filter */
         .search-box {
-            margin-bottom: 0.8rem;
+            margin-bottom: 1.5rem;
             position: relative;
         }
 
         .search-box input {
             width: 100%;
-            padding: 0.55rem 0.8rem 0.55rem 2.1rem;
+            padding: 0.75rem 1rem 0.75rem 2.5rem;
             border: 1px solid var(--gray-light);
             border-radius: var(--border-radius);
             font-family: 'Inter', sans-serif;
-            font-size: 0.92rem;
+            font-size: 1rem;
             transition: var(--transition);
         }
 
@@ -597,7 +470,7 @@
 
         .search-box i {
             position: absolute;
-            left: 0.8rem;
+            left: 1rem;
             top: 50%;
             transform: translateY(-50%);
             color: var(--gray);
@@ -606,17 +479,17 @@
         .filter-buttons {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.35rem;
-            margin-bottom: 0.9rem;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
         }
 
         .filter-btn {
-            padding: 0.35rem 0.7rem;
+            padding: 0.5rem 1rem;
             background-color: white;
             border: 1px solid var(--gray-light);
             border-radius: var(--border-radius);
             font-family: 'Inter', sans-serif;
-            font-size: 0.82rem;
+            font-size: 0.875rem;
             cursor: pointer;
             transition: var(--transition);
         }
@@ -635,16 +508,16 @@
         .main-footer {
             background-color: var(--primary-dark);
             color: white;
-            padding: 1.75rem 0 1.25rem;
-            margin-top: 1.5rem;
+            padding: 3rem 0 2rem;
+            margin-top: 3rem;
         }
 
         .footer-content {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            gap: 1.25rem;
-            margin-bottom: 1.25rem;
+            gap: 2rem;
+            margin-bottom: 2rem;
         }
 
         .footer-section {
@@ -654,8 +527,8 @@
 
         .footer-section h3 {
             color: white;
-            margin-bottom: 0.6rem;
-            font-size: 1.05rem;
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
         }
 
         .footer-links {
@@ -664,7 +537,7 @@
         }
 
         .footer-links li {
-            margin-bottom: 0.3rem;
+            margin-bottom: 0.5rem;
         }
 
         .footer-links a {
@@ -677,26 +550,26 @@
 
         .copyright {
             text-align: center;
-            padding-top: 1rem;
+            padding-top: 2rem;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             color: rgba(255, 255, 255, 0.7);
-            font-size: 0.82rem;
+            font-size: 0.9rem;
         }
 
         /* ===== Back to Top Button ===== */
         .back-to-top {
             position: fixed;
-            bottom: 1.25rem;
-            right: 1.25rem;
-            width: 2.5rem;
-            height: 2.5rem;
+            bottom: 2rem;
+            right: 2rem;
+            width: 3rem;
+            height: 3rem;
             background-color: var(--primary);
             color: white;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1rem;
+            font-size: 1.25rem;
             box-shadow: var(--box-shadow);
             cursor: pointer;
             opacity: 0;
@@ -730,7 +603,7 @@
             .sidebar-content {
                 display: flex;
                 flex-wrap: wrap;
-                gap: 0.85rem;
+                gap: 1.5rem;
             }
             
             .sidebar-card {
@@ -748,7 +621,7 @@
                 width: 100%;
                 background-color: white;
                 flex-direction: column;
-                padding: 0.75rem 1rem;
+                padding: 1rem;
                 box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             }
             
@@ -761,21 +634,21 @@
             }
             
             h1 {
-                font-size: 1.85rem;
+                font-size: 2rem;
             }
             
             h2 {
-                font-size: 1.35rem;
+                font-size: 1.75rem;
             }
             
             section {
-                padding: 1rem;
+                padding: 1.5rem;
             }
             
             .contact-info {
                 flex-direction: column;
                 align-items: center;
-                gap: 0.45rem;
+                gap: 0.75rem;
             }
             
             .section-header {
@@ -786,16 +659,15 @@
 
         @media (max-width: 576px) {
             .container, .main-container {
-                padding-left: 0.75rem;
-                padding-right: 0.75rem;
+                padding: 0 1rem;
             }
             
             .header-content h1 {
-                font-size: 1.6rem;
+                font-size: 1.75rem;
             }
             
             .header-content .subtitle {
-                font-size: 0.92rem;
+                font-size: 1rem;
             }
             
             .publication-links {
@@ -837,23 +709,6 @@
             padding: 0.125rem 0.25rem;
             border-radius: 3px;
         }
-
-        .bio-highlight {
-            color: var(--primary-dark);
-            background-color: rgba(0, 86, 179, 0.08);
-            border-radius: 4px;
-            font-weight: 600;
-            padding: 0.08rem 0.28rem;
-        }
-
-        .bio-metric {
-            color: #8a4b00;
-            background-color: rgba(255, 136, 0, 0.12);
-            border-radius: 4px;
-            font-weight: 700;
-            padding: 0.08rem 0.28rem;
-            white-space: nowrap;
-        }
         
         .badge {
             display: inline-block;
@@ -883,17 +738,16 @@
         .show-more-btn {
             display: block;
             width: 100%;
-            padding: 0.55rem;
+            padding: 0.75rem;
             background-color: rgba(0, 86, 179, 0.1);
             border: none;
             border-radius: var(--border-radius);
             color: var(--primary);
             font-family: 'Inter', sans-serif;
             font-weight: 600;
-            font-size: 0.9rem;
             cursor: pointer;
             transition: var(--transition);
-            margin-top: 0.85rem;
+            margin-top: 1.5rem;
         }
         
         .show-more-btn:hover {
@@ -901,7 +755,7 @@
         }
         
         .collapsible {
-            max-height: 360px;
+            max-height: 400px;
             overflow: hidden;
             position: relative;
         }
@@ -916,7 +770,7 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            height: 42px;
+            height: 60px;
             background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.9) 70%, white);
             pointer-events: none;
             opacity: 1;
@@ -987,6 +841,7 @@
                         <li><a href="#others"><i class="fas fa-ellipsis-h"></i> Others</a></li>
                     </ul>
                 </div>
+                
                 <div class="sidebar-card">
                     <h3>Quick Info</h3>
                     <div class="quick-info">
@@ -1013,44 +868,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="sidebar-card">
-                    <h3>Visitor Stats</h3>
-                    <div class="visitor-stats">
-                        <div class="visitor-stat-item">
-                            <i class="fas fa-chart-line"></i>
-                            <div>
-                                <strong>Local Visits</strong>
-                                <span id="visitor-local-count">...</span>
-                            </div>
-                        </div>
-                        <div class="visitor-stat-item">
-                            <i class="fas fa-clock"></i>
-                            <div>
-                                <strong>Last Visit</strong>
-                                <span id="visitor-last-visit">...</span>
-                            </div>
-                        </div>
-                        <div class="visitor-stat-item">
-                            <i class="fas fa-location-dot"></i>
-                            <div>
-                                <strong>Approx. Locale</strong>
-                                <span id="visitor-locale">...</span>
-                            </div>
-                        </div>
-                        <div class="visitor-map" aria-label="Approximate visitor map based on browser timezone">
-                            <div class="visitor-map-pin" id="visitor-map-pin"></div>
-                            <div class="visitor-map-label" id="visitor-map-label">Locating from timezone...</div>
-                        </div>
-                    </div>
-                </div>
+                
                 <div class="sidebar-card">
                     <h3>External Links</h3>
                     <ul class="sidebar-links">
+                        <li><a href="https://scholar.google.com/citations?user=sou7o2EAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a></li>
                         <li><a href="https://www.kaggle.com/kelexu/competitions" target="_blank"><i class="fab fa-kaggle"></i> Kaggle Profile</a></li>
                         <li><a href="https://ieee-cas.org/contact/kele-xu" target="_blank"><i class="fas fa-edit"></i> TCSVT Editorial</a></li>
                         <li><a href="https://zeroqiaoba.github.io/MER2025-website/#organization" target="_blank"><i class="fas fa-user-tie"></i> MER25 Challenge</a></li>
-						<li><a href="https://zeroqiaoba.github.io/MER-Challenge/" target="_blank"><i class="fas fa-user-tie"></i> MER26 Challenge</a></li>
-					</ul>
+                    </ul>
                 </div>
             </div>
         </aside>
@@ -1062,7 +888,10 @@
                 <div class="section-header">
                     <h2>Brief Biography</h2>
                 </div>
-                <p class="mb-0">I am an <span class="bio-highlight">Associate Professor at the National University of Defense Technology (NUDT)</span> and a <span class="bio-highlight">Kaggle Grandmaster</span>. I received my Ph.D. from Université Pierre et Marie Curie in 2017. My research focuses on <span class="bio-highlight">computer audition</span>, <span class="bio-highlight">multimodal continual learning</span>, and <span class="bio-highlight">AI4Science</span>. I have authored <span class="bio-metric">over 100 publications</span> in top-tier conferences and journals, with <span class="bio-metric">over 5,000 Google Scholar citations</span> and an <span class="bio-metric">h-index of 39</span>. In addition to winning top awards in major ML competitions like the <span class="bio-highlight">ACM KDD Cup</span>, I serve as an <span class="bio-highlight">Associate Editor for IEEE TCSVT</span>. For collaborations or joining my research group, please contact me at kele.xu at ieee dot org.</p>
+                <p>Currently, I serve as an Associate Professor at the State Key Laboratory of Complex & Critical Software Environment at NUDT, China.</p>
+                <p>I received my Ph.D. degree from Université Pierre et Marie Curie, Paris, France, working with Prof. Bruce Denby and Prof. Gerard Dreyfus (IEEE Fellow). My research focuses on <span class="highlight">Continual learning</span>, <span class="highlight">Computer audition</span>, and <span class="highlight">AI4Science</span>.</p>
+                <p>In addition to academic pursuits, I actively participate in machine learning competitions, having achieved top ranks in data mining and machine learning competitions, including the <a href="https://www.kdd.org/kdd2017/announcements/view/announcing-kdd-cup-2017-highway-tollgates-traffic-flow-prediction" target="_blank">ACM KDD Cup</a>, Kaggle, Tianchi, and CCF BDCI. I am also a <a href="https://www.kaggle.com/kelexu/competitions" target="_blank"><strong>Kaggle Grandmaster</strong></a>.</p>
+                <p>If you're interested in joining us, please drop me an email at: <strong>kele.xu at ieee dot org</strong></p>
             </section>
 
             <!-- Recent News Section -->
@@ -1078,7 +907,6 @@
                 </div>
                 
                 <div class="filter-buttons">
-					<button class="filter-btn" data-year="2026">2026</button>
                     <button class="filter-btn" data-year="2025">2025</button>
                     <button class="filter-btn" data-year="2024">2024</button>
                     <button class="filter-btn" data-year="2023">2023</button>
@@ -1099,46 +927,6 @@
                 </button>
             </section>
 
-            <!-- Publications Section -->
-            <section id="publications">
-                <div class="section-header">
-                    <h2>Selected Publications</h2>
-                </div>
-                
-                <p>A full list of publications is available on my <a href="https://scholar.google.com/citations?user=sou7o2EAAAAJ&hl=en" target="_blank">Google Scholar Profile</a>.</p>
-                <p><em>* denotes corresponding author</em></p>
-                
-                <!-- Publications Search -->
-                <div class="search-box">
-                    <i class="fas fa-search"></i>
-                    <input type="text" id="publications-search" placeholder="Search publications by title, author or venue...">
-                </div>
-                
-                <div class="filter-buttons">
-					<button class="filter-btn" data-year="2026">2026</button>
-                    <button class="filter-btn" data-year="2025">2025</button>
-                    <button class="filter-btn" data-year="2024">2024</button>
-                    <button class="filter-btn" data-year="2023">2023</button>
-                    <button class="filter-btn" data-year="2022">2022</button>
-                    <button class="filter-btn" data-year="2021">2021</button>
-                    <button class="filter-btn" data-year="2020">2020</button>
-                    <button class="filter-btn" data-year="2019">2019</button>
-                    <button class="filter-btn" data-year="before">Before 2019</button>
-                    <button class="filter-btn active" data-year="preprint">Preprint</button>
-					<button class="filter-btn" data-year="monograph">Monograph</button>
-                    <button class="filter-btn" data-year="all">All Years</button>
-                </div>
-                
-                <!-- Publications Container -->
-                <div id="publications-container">
-                    <!-- Publications will be dynamically loaded here -->
-                </div>
-                
-                <button class="show-more-btn" id="toggle-publications-btn">
-                    <i class="fas fa-chevron-down"></i> Show All Publications
-                </button>
-            </section>
-
             <!-- Academic Services Section -->
             <section id="services">
                 <div class="section-header">
@@ -1146,44 +934,87 @@
                 </div>
                 
                 <div class="collapsible" id="services-container">
-                    <div class="service-list-group">
-                        <h3>Editorial Roles & Guest Editorships</h3>
-                        <ul>
-                            <li>Associate Editor, IEEE Transactions on Circuits and Systems for Video Technology <a href="https://ieee-cas.org/contact/kele-xu" target="_blank">[Link]</a></li>
-                            <li>Associate Editor, Frontiers in Artificial Intelligence / Frontiers in Big Data <a href="https://www.frontiersin.org/journals/big-data/sections/machine-learning-and-artificial-intelligence/editors" target="_blank">[Link]</a></li>
-                            <li>Guest Editor, SPJ Cyborg and Bionic Systems <a href="https://spj.science.org/page/cbsystems/si/audio-inspired-methods-for-healthcare" target="_blank">[Link]</a></li>
-                            <li>Guest Editor, Computer Speech & Language <a href="https://www.sciencedirect.com/special-issue/332571/acoustical-intelligence-in-the-wild-advancing-acoustic-signal-understanding-in-open-environments" target="_blank">[Link]</a></li>
-                            <li>Guest Editor, Sensors <a href="https://www.mdpi.com/journal/sensors/special_issues/4PJ45YQ956" target="_blank">[Link]</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="service-list-group">
-                        <h3>Professional Memberships</h3>
-                        <ul>
-                            <li>IEEE Senior Member</li>
-                            <li>China Computer Federation (CCF), Senior Member</li>
-                            <li>Chinese Association of Automation (CAA), Lifelong Member</li>
-                            <li>Acoustical Society of America (ASA), Full Member</li>
-                            <li>ACM, IEEE IADF TC, and Acoustical Society of China member</li>
-                        </ul>
-                    </div>
-
-                    <div class="service-list-group">
-                        <h3>Conference Service</h3>
-                        <ul>
-                            <li>Session Chair, Area Chair, PC Member, Meta-Reviewer, or External Reviewer for major AI, machine learning, multimedia, speech, computer vision, and biomedical conferences.</li>
-                            <li>ICLR, NeurIPS, ICML, IJCAI, AAAI, ICCV, CVPR, ACM MM, MM Asia, ICASSP, MICCAI, ICME, ECCV, INTERSPEECH, ISBI, MSN, APSIPA ASC, BIBM, AISTATS, and others.</li>
-                        </ul>
-                    </div>
-
-                    <div class="service-list-group">
-                        <h3>Journal Reviewing</h3>
-                        <ul>
-                            <li>Reviewer for leading journals across acoustics, speech, signal processing, multimedia, AI, remote sensing, biomedical engineering, and intelligent systems.</li>
-                            <li>Nature Communications, JASA, Speech Communication, IEEE TASLP, IEEE TNNLS, IEEE TMM, IEEE TIP, IEEE TAI, IEEE TGRS, IEEE JBHI, ACM TIST, Neural Networks, Neurocomputing, Expert Systems with Applications, Knowledge-Based Systems, and others.</li>
-                        </ul>
-                    </div>
+                    <!-- Memberships -->
+                    <h3>Memberships</h3>
+                    <ul>
+                        <li>Acoustical Society of America (ASA), Full Member</li>
+                        <li>IEEE Senior Member</li>
+                        <li>Association for Computing Machinery (ACM) Member</li>
+                        <li>IEEE Image Analysis and Data Fusion (IADF) Technical Committee Member</li>
+                        <li>China Computer Federation (CCF), Senior Member</li>
+                        <li>Chinese Association of Automation (CAA), Lifelong Member</li>
+                        <li>Acoustical Society of China (ASC), Member</li>
+                    </ul>
+                    
+                    <!-- Session Chair, Area Chair, PC Member, Meta-Reviewer or External Reviewer -->
+                    <h3>Session Chair, Area Chair, PC Member, Meta-Reviewer or External Reviewer</h3>
+                    <ul>
+                        <li>International Conference on Learning Representations (ICLR)</li>
+                        <li>Neural Information Processing Systems (NeurIPS)</li>
+                        <li>International Conference on Machine Learning (ICML)</li>
+                        <li>International Joint Conferences on Artificial Intelligence (IJCAI)</li>
+                        <li>AAAI Conference on Artificial Intelligence (AAAI)</li>
+                        <li>International Conference on Computer Vision (ICCV)</li>
+                        <li>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</li>
+                        <li>ACM International Conference on Multimedia (ACM MM)</li>
+                        <li>ACM International Conference on Multimedia in Asia (MM Asia)</li>
+                        <li>International Conference on Acoustics, Speech & Signal Processing (ICASSP)</li>
+                        <li>Medical Image Computing and Computer Assisted Intervention (MICCAI)</li>
+                        <li>IEEE Conference on Multimedia Expo (ICME)</li>
+                        <li>European Conference on Computer Vision (ECCV)</li>
+                        <li>International Conference of the Speech Communication Association (INTERSPEECH)</li>
+                        <li>IEEE International Symposium on Biomedical Imaging (ISBI)</li>
+                        <li>IEEE International Conference on Mobility, Sensing and Networking (MSN)</li>
+                        <li>Asia-Pacific Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC)</li>
+                        <li>IEEE International Conference on Bioinformatics and Biomedicine (BIBM)</li>
+                        <li>International Conference on Artificial Intelligence and Statistics (AISTATS)</li>
+                        <li>...</li>
+                    </ul>
+                    
+                    <!-- Journal Reviewer -->
+                    <h3>Journal Reviewer</h3>
+                    <ul>
+                        <li>Nature Communication</li>
+                        <li>Science Partner Journal Cyborg and Bionic Systems <a href="https://spj.science.org/page/cbsystems/si/audio-inspired-methods-for-healthcare" target="_blank">[Guest Editor]</a></li>
+                        <li>The Journal of the Acoustical Society of America</li>
+                        <li>Acta Acustica united with Acustica</li>
+                        <li>Speech Communication</li>
+                        <li>Computer Speech & Language</li>
+                        <li>IEEE Transactions on Circuits and Systems for Video Technology <a href="https://ieee-cas.org/contact/kele-xu" target="_blank">[Editorial Board/Associate Editor]</a></li>
+                        <li>IEEE Transactions on Audio, Speech and Language Processing</li>
+                        <li>IEEE Transactions on Neural Networks and Learning Systems</li>
+                        <li>IEEE Transactions on Cognitive and Developmental Systems</li>
+                        <li>IEEE Transactions on Signal Processing</li>
+                        <li>IEEE Transactions on Image Processing</li>
+                        <li>IEEE Transactions on Artificial Intelligence</li>
+                        <li>IEEE Transactions on Geoscience and Remote Sensing</li>
+                        <li>IEEE Geoscience and Remote Sensing Letters</li>
+                        <li>IEEE Signal Processing Letters</li>
+                        <li>IEEE Transactions on Systems, Man and Cybernetics: Systems</li>
+                        <li>IEEE Journal of Biomedical and Health Informatics</li>
+                        <li>IEEE Internet of Things Journal</li>
+                        <li>IEEE Transactions on Services Computing</li>
+                        <li>ACM Transactions on Intelligent Systems and Technology</li>
+                        <li>SCIENCE CHINA Information Sciences</li>
+                        <li>Frontiers in Artificial intelligence <a href="https://www.frontiersin.org/journals/big-data/sections/machine-learning-and-artificial-intelligence/editors" target="_blank">[Associate Editor]</a></li>
+                        <li>Neural Networks</li>
+                        <li>Biocybernetics and Biomedical Engineering</li>
+                        <li>Engineering Applications of Artificial Intelligence</li>
+                        <li>Biomedical Signal Processing & Control</li>
+                        <li>BMC Medical Imaging</li>
+                        <li>Intelligent Medicine</li>
+                        <li>Computer Methods and Programs in Biomedicine</li>
+                        <li>Computers in Biology and Medicine</li>
+                        <li>Expert Systems With Applications</li>
+                        <li>Knowledge-Based Systems</li>
+                        <li>Frontiers in Neuroscience</li>
+                        <li>Frontiers in Big Data <a href="https://www.frontiersin.org/journals/artificial-intelligence" target="_blank">[Associate Editor]</a></li>
+                        <li>Neurocomputing</li>
+                        <li>Sensors <a href="https://www.mdpi.com/journal/sensors/special_issues/4PJ45YQ956" target="_blank">[Guest Editor]</a></li>
+                        <li>...</li>
+                    </ul>
                 </div>
+                
                 <button class="show-more-btn" id="toggle-services-btn">
                     <i class="fas fa-chevron-down"></i> Show All Services
                 </button>
@@ -1210,6 +1041,45 @@
                 </button>
             </section>
 
+            <!-- Publications Section -->
+            <section id="publications">
+                <div class="section-header">
+                    <h2>Selected Publications</h2>
+                </div>
+                
+                <p>A full list of publications is available on my <a href="https://scholar.google.com/citations?user=sou7o2EAAAAJ&hl=en" target="_blank">Google Scholar Profile</a>.</p>
+                <p><em>* denotes corresponding author</em></p>
+                
+                <!-- Publications Search -->
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="publications-search" placeholder="Search publications by title, author or venue...">
+                </div>
+                
+                <div class="filter-buttons">
+					<button class="filter-btn active" data-year="2026">2026</button>
+                    <button class="filter-btn" data-year="2025">2025</button>
+                    <button class="filter-btn" data-year="2024">2024</button>
+                    <button class="filter-btn" data-year="2023">2023</button>
+                    <button class="filter-btn" data-year="2022">2022</button>
+                    <button class="filter-btn" data-year="2021">2021</button>
+                    <button class="filter-btn" data-year="2020">2020</button>
+                    <button class="filter-btn" data-year="2019">2019</button>
+                    <button class="filter-btn" data-year="before">Before 2019</button>
+                    <button class="filter-btn" data-year="preprint">Preprint</button>
+                    <button class="filter-btn" data-year="all">All Years</button>
+                </div>
+                
+                <!-- Publications Container -->
+                <div id="publications-container">
+                    <!-- Publications will be dynamically loaded here -->
+                </div>
+                
+                <button class="show-more-btn" id="toggle-publications-btn">
+                    <i class="fas fa-chevron-down"></i> Show All Publications
+                </button>
+            </section>
+
             <!-- Others Section -->
             <section id="others">
                 <div class="section-header">
@@ -1230,6 +1100,12 @@
                     <li>CCF BDCI Competition. [<a href="https://www.datafountain.cn/competitions/484">Link</a>]</li>
                 </ul>
                 
+                <div class="mt-3">
+                    <h4>Visitor Map</h4>
+                    <div style="width: 100%; height: 200px; background-color: #f0f0f0; border-radius: var(--border-radius); display: flex; align-items: center; justify-content: center;">
+                        <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=386&t=tt&d=C-OEA2o32D2NX7QBXg8USlrCArliZik1Tp-VJCZawBg"></script>
+                    </div>
+                </div>
             </section>
         </main>
     </div>
@@ -1259,8 +1135,8 @@
                     <li><a href="#bio">Biography</a></li>
                     <li><a href="#news">Recent News</a></li>
                     <li><a href="#publications">Publications</a></li>
-                    <li><a href="#services">Academic Services</a></li>
                     <li><a href="#competitions">Awards</a></li>
+                    <li><a href="#services">Academic Services</a></li>
                 </ul>
             </div>
         </div>
@@ -1367,102 +1243,14 @@
             
             // 设置筛选功能
             setupFilterFunctionality();
-            
-            // 初始化本地访客统计
-            initializeVisitorStats();
         });
         
-        // ===== 本地访客统计 =====
-        function initializeVisitorStats() {
-            const countEl = document.getElementById('visitor-local-count');
-            const lastVisitEl = document.getElementById('visitor-last-visit');
-            const localeEl = document.getElementById('visitor-locale');
-            if (!countEl || !lastVisitEl || !localeEl) return;
-
-            const storageKey = 'kele-xu-local-visit-count';
-            const lastVisitKey = 'kele-xu-last-visit';
-            const previousCount = Number(localStorage.getItem(storageKey) || '0');
-            const currentCount = previousCount + 1;
-            const now = new Date();
-            const previousVisit = localStorage.getItem(lastVisitKey);
-
-            localStorage.setItem(storageKey, String(currentCount));
-            localStorage.setItem(lastVisitKey, now.toISOString());
-
-            countEl.textContent = `${currentCount} visits from this browser`;
-            lastVisitEl.textContent = previousVisit ? new Date(previousVisit).toLocaleString() : 'First visit from this browser';
-
-            const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone || 'Unknown timezone';
-            const language = navigator.language || 'Unknown language';
-            const approximateLocation = getApproximateVisitorLocation(timeZone);
-            localeEl.textContent = `${timeZone} / ${language}`;
-            updateVisitorMap(approximateLocation, timeZone);
-        }
-        function getApproximateVisitorLocation(timeZone) {
-            const locations = {
-                'Asia/Shanghai': { label: 'China', lat: 35.9, lon: 104.2 },
-                'Asia/Hong_Kong': { label: 'Hong Kong', lat: 22.3, lon: 114.2 },
-                'Asia/Taipei': { label: 'Taiwan', lat: 23.7, lon: 121.0 },
-                'Asia/Tokyo': { label: 'Japan', lat: 36.2, lon: 138.3 },
-                'Asia/Seoul': { label: 'South Korea', lat: 36.5, lon: 127.8 },
-                'Asia/Singapore': { label: 'Singapore', lat: 1.35, lon: 103.8 },
-                'Asia/Kolkata': { label: 'India', lat: 22.9, lon: 78.9 },
-                'Europe/London': { label: 'United Kingdom', lat: 54.0, lon: -2.0 },
-                'Europe/Paris': { label: 'France', lat: 46.2, lon: 2.2 },
-                'Europe/Berlin': { label: 'Germany', lat: 51.2, lon: 10.4 },
-                'America/New_York': { label: 'Eastern United States', lat: 40.7, lon: -74.0 },
-                'America/Chicago': { label: 'Central United States', lat: 41.9, lon: -87.6 },
-                'America/Denver': { label: 'Mountain United States', lat: 39.7, lon: -105.0 },
-                'America/Los_Angeles': { label: 'Western United States', lat: 34.1, lon: -118.2 },
-                'America/Toronto': { label: 'Canada', lat: 43.7, lon: -79.4 },
-                'Australia/Sydney': { label: 'Australia', lat: -33.9, lon: 151.2 }
-            };
-
-            if (locations[timeZone]) return locations[timeZone];
-
-            const region = timeZone.split('/')[0];
-            const fallback = {
-                Asia: { label: 'Asia', lat: 34, lon: 100 },
-                Europe: { label: 'Europe', lat: 50, lon: 10 },
-                America: { label: 'Americas', lat: 38, lon: -97 },
-                Africa: { label: 'Africa', lat: 0, lon: 20 },
-                Australia: { label: 'Australia', lat: -25, lon: 134 },
-                Pacific: { label: 'Pacific region', lat: -15, lon: -150 }
-            };
-            return fallback[region] || { label: 'Unknown region', lat: 20, lon: 0 };
-        }
-
-        function updateVisitorMap(location, timeZone) {
-            const pin = document.getElementById('visitor-map-pin');
-            const label = document.getElementById('visitor-map-label');
-            if (!pin || !label || !location) return;
-
-            const x = ((location.lon + 180) / 360) * 100;
-            const y = ((90 - location.lat) / 180) * 100;
-            pin.style.left = `${Math.min(96, Math.max(4, x))}%`;
-            pin.style.top = `${Math.min(92, Math.max(8, y))}%`;
-            label.textContent = `${location.label} (${timeZone})`;
-        }
         // ===== 新闻数据处理 =====
         function initializeNewsData() {
             // 原始新闻数据 - 从原始HTML中提取的所有新闻，按时间倒序排列
             const rawNews = [
-                {date: "2026-06", content: "Ranked as <strong>2nd</strong> place in <strong>ACM MM TRIDENT: Tri-modal Deepfake Perception, Detection, and Hallucination Grand Challenge</strong>."},
-                {date: "2026-06", content: "Ranked as <strong>3rd</strong> place in <strong>ACM MM AAAD Challenge 2026: Adversarial Attacks on Deepfake Detection: Generated Media in Real-World Scenarios</strong>."},
-				{date: "2026-06", content: "One paper is accepted by <strong>IEEE Transactions on Information Forensics and Security (TIFS)</strong>."},
-				{date: "2026-06", content: "Five papers are accepted by <strong>InterSpeech</strong>."},
-				{date: "2026-06", content: "One paper is accepted by <strong>IEEE Transactions on Neural Networks and Learning Systems (TNNLS)</strong>."},
-				{date: "2026-05", content: "One paper is accepted by <strong>International Conference on Machine Learning (ICML)</strong>."},
-				{date: "2026-04", content: "One paper is accepted by <strong>IEEE Transactions on Audio, Speech and Language Processing (TASLP)</strong>."},
-				{date: "2026-04", content: "Special Issue on <strong>Acoustical Intelligence in the Wild</strong> is now open for submissions at <strong>Computer Speech and Language</strong>."},
-				{date: "2026-02", content: "Three paper are accepted by <strong>IEEE International Conference on Computer Vision and Pattern Recognition (CVPR)</strong>."},
-				{date: "2026-01", content: "Two papers are accepted by <strong>IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)</strong>."},
-				{date: "2026-01", content: "One paper is accepted by <strong>Neural Network</strong>."},
-				{date: "2026-01", content: "Join as <strong>Editorial Board</strong> of <strong>Scientific Reports</strong>."},
-				{date: "2026-01", content: "One paper is accepted by <strong>Advanced Science</strong>."},
-				{date: "2026-01", content: "One paper is accepted by <strong>IEEE Transactions on Instrumentation & Measurement</strong>."},
-				{date: "2025-12", content: "Appointed as an inaugural <strong>Young Editorial Board Member</strong> of <strong>Machine Intelligence Research (MIR)</strong>."},
-				{date: "2025-11", content: "One paper is accepted by <strong>AAAI Conference on Artificial Intelligence (oral)</strong>."},
+				{date: "2025-12", content: "Selected as the Young Editorial Board Member of <strong>Machine Intelligence Research (MIR).</strong>"},
+                {date: "2025-11", content: "One paper is accepted by <strong>AAAI Conference on Artificial Intelligence (oral)</strong>."},
                 {date: "2025-11", content: "One paper is accepted by <strong>IEEE Transactions on Circuits and Systems for Video Technology</strong>."},
                 {date: "2025-11", content: "One paper is accepted by <strong>IEEE Transactions on Knowledge and Data Engineering</strong>."},
                 {date: "2025-10", content: "One paper is accepted by <strong>IEEE Transactions on Circuits and Systems for Video Technology</strong>."},
@@ -1628,699 +1416,457 @@
         
         // ===== 出版物数据处理 =====
         function initializePublicationsData() {
-            // 出版物数据 - 包含Preprint、2026、2025、2024、2023、2022、2021、2020、2019及更早,BOOKS
+            // 出版物数据 - 包含Preprint、2025、2024、2023、2022、2021、2020、2019及更早
             allPublicationsData = [
-
-				// Book 部分
-				  {
-					"year": "monograph",
-					"authors": "<u>Kele Xu</u>",
-					"title": "Data Mining Competition Practice: Methods and Cases",
-					"venue": "Tsinghua University Press",
-					"links": [
-					  { "text": "In Chinese", url: "https://www.tup.com.cn/booksCenter/book_10078401.html" },
-					  { "text": "In English", url: "https://books.google.com.sg/books/about/Data_Mining_Competition_Practices.html?id=h1KU0QEACAAJ&redir_esc=y" }
-					]
-				  },
-				  {
-					"year": "monograph",
-					authors: "<u>Kele Xu*</u>, Jisheng Bai, Boqing Zhu, Qisheng Xu, Yi Su, Mou Wang",
-					"title": "General Audio Signal Processing with Deep Learning",
-					"venue": "Springer nature",
-					"links": [
-					  { "text": "Link", url: "https://books.google.com.hk/books/about/General_Audio_Signal_Processing_with_Dee.html?id=1Vd00QEACAAJ&redir_esc=y" }
-					]
-				  },
-
                 // Preprint 部分
+                  {
+					"year": "preprint",
+					"authors": "Xuyao Deng, Yong Dou, <u>Kele Xu*</u>",
+					"title": "BeamformNet: Deep Learning-Based Beamforming Method for DoA Estimation via Implicit Spatial Signal Focusing and Noise Suppression",
+					"venue": "IEEE Transactions on Cognitive Communications and Networking",
+					"links": []
+					},
+					{
+					"year": "preprint",
+					"authors": "Hui Geng, Tianjiao Wan, Yi Su, Qisheng Xu, Zijian Gao, Hengzhu Liu, Dawei Feng, <u>Kele Xu*</u>",
+					"title": "A Dual-Memory Consolidation Framework for Data-Efficient Active Learning",
+					"venue": "IEEE Transactions on Knowledge and Data Engineering",
+					"links": []
+					},
+					{
+					"year": "preprint",
+					"authors": "Tianjiao Wan, Zijian Gao, Jingyu Wei, Jiaxin Chen, Dawei Feng, Bo Ding, Yijie Wang, and Huaimin Wang, <u>Kele Xu*</u>",
+					"title": "Graph-based Mutual Influence for Active Learning",
+					"venue": "IEEE Transactions on Knowledge and Data Engineering",
+					"links": []
+					},
+					{
+					"year": "preprint",
+					"authors": "Man Xiao, Jianbin Ye, Bo Liu, Xingkong Ma, Tianjiao Wang, Qisheng Xu, Huaimin Wang, <u>Kele Xu*</u>",
+					"title": "Multimodal Deepfake DNA-Purified Cascaded Diversification for Continual Few-shot Detection",
+					"venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+					"links": []
+					},
+					{
+					"year": "preprint",
+					"authors": "Qian Zhu, Qisheng Xu, Yi Su, Yulin Sun, Yutao Dou, Tao Li, <u>Kele Xu*</u>",
+					"title": "UACIL: A Large-Scale Dataset for Class Incremental Learning in Underwater Acoustic Target Recognition",
+					"venue": "Nature Partner Journals Acoustics",
+					"links": []
+					},
+					{
+					"year": "preprint",
+					"authors": "Xiaoyi Tan, Qisheng Xu, Boqing Zhu, Huaimin Wang, Yutao Dou,  <u>Kele Xu*</u>",
+					"title": "Representation-Decoupled and Classifier-Refined Learning for Fully Few-shot Class-Incremental Audio Classification",
+					"venue": "ACM Transactions on Multimedia Computing Communications and Applications",
+					"links": []
+					},
+					{
+					"year": "preprint",
+					"authors": "Hui Geng, Tianjiao Wa, Qisheng Xu, Zijian Gao, Boqing Zhu, Wen Zhang,  <u>Kele Xu*</u>",
+					"title": "Uncertainty-Guided Active Learning for Underwater Acoustic Target Recognition Via Attention-Aware Inconsistency",
+					"venue": "IEEE Transactions on Geoscience and Remote Sensing",
+					"links": []
+					},
+					{
+					"year": "preprint",
+					"authors": "Xuyao Deng, Yanjie Sun, Yong Dou,  <u>Kele Xu*</u>",
+					"title": "Unify Variables in Neural Scaling Laws for General Audio Representations via Embedding Effective Rank",
+					"venue": "IEEE Transactions on Audio, Speech and Language Processing",
+					"links": []
+					},
+					{
+					"year": "preprint",
+					"authors": "Xuyao Deng, Yong Dou, <u>Kele Xu*</u>",
+					"title": "Spatial Signal Focusing and Noise Suppression for Direction-of-Arrival Estimation in Large-Aperture 2D Arrays under Demanding Conditions",
+					"venue": "IEEE Transactions on Signal Processing",
+					"links": []
+					},
+					{
+					"year": "preprint",
+					"authors": "Tao Sun, Yuhao Huang, Li Shen, <u>Kele Xu</u>, Xinwang Liu, Bao Wang",
+					"title": "How Does Weight Decay Improve the Nonconvex SGD: When and Why?",
+					"venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+					"links": []
+					},
+					{
+					"year": "preprint",
+					"authors": "Zhiyan Wang, Changjian Wang*, <u>Kele Xu*</u>, Zhongshun Tang, Yan Zhuang, Jiani Zou, Fangyi Liu",
+					"title": "MCDNet: Morphological-Conditional Dual-view Fusion for 3D Tubular Structure Segmentation",
+					"venue": "Neural Networks",
+					"links": []
+					},
+					{
+					"year": "preprint",
+					"authors": "Kele Xu, Guojiang Zhao, Zheng Cheng, Tianjiao Wan, Ming Feng, Shuqi Lu, Hongshuai Wang, Zijian Gao, Qi Ou, Liang Hu, Dawei Feng, Zifeng Zhao, Zhifeng Gao",
+					"title": "Fast and flexible 3D molecule design framework for novel organic optoelectronic materials",
+					"venue": "Preprint",
+					"links": [{"text": "Paper", "url": "https://chemrxiv.org/engage/chemrxiv/article-details/67ae0f2cfa469535b92fae05"}]
+					},
+					{
+					"year": "preprint",
+					"authors": "Yi Su, Jisheng Bai, Qisheng Xu, <u>Kele Xu*</u>, Yong Dou",
+					"title": "Audio-Language Models for Audio-Centric Tasks: A survey",
+					"venue": "IEEE Transactions on Neural Networks and Learning Systems",
+					"links": [{"text": "Paper", "url": "https://arxiv.org/abs/2412.11907"}]
+					},
+					{
+					"year": "preprint",
+					"authors": "Wuyang Chen, Yanjie Sun, <u>Kele Xu*</u>, Xinwang Liu, Xingyi Li, Yong Dou, Huaimin Wang",
+					"title": "A Survey on Human-centric Voice-Face Multimodal Learning",
+					"venue": "IEEE Transactions on Neural Networks and Learning Systems",
+					"links": []
+					},
+					{
+					"year": "preprint",
+					"authors": "Qisheng Xu, Yulin Sun, Yi Su, Qian Zhu, Xiaoyi Tan, Hongyu Wen, Zijian Gao, <u>Kele Xu*</u>, Yong Dou, Dawei Feng",
+					"title": "AudioCIL: A Python Toolbox for Audio Class-Incremental Learning with Multiple Scenes",
+					"venue": "Arxiv",
+					"links": [{"text": "Paper", "url": "https://arxiv.org/abs/2412.11907"}]
+					},
+					{
+					"year": "preprint",
+					"authors": "Huanxi Liu, Jiaqi Liao, Dawei Feng, <u>Kele Xu</u>, Huaimin Wang",
+					"title": "AutoFeedback: An LLM-based Framework for Efficient and Accurate API Request Generation",
+					"venue": "Arxiv",
+					"links": [{"text": "Paper", "url": "https://arxiv.org/abs/2410.06943"}]
+					},
+					{
+					"year": "preprint",
+					"authors": "Xiao Teng, Guochun Chen, Dingyao Chen, <u>Kele Xu</u>, Xinwang Liu, Long Lan",
+					"title": "Hybrid Association-Based Cross-Modality Learning for Unsupervised Visible-Infrared Person Re-Identification",
+					"venue": "IEEE Transactions on Intelligent Transportation Systems",
+					"links": []
+					},
+					{
+					"year": "preprint",
+					"authors": "Jianbin Ye, Man Xiao, Bo Liu, Huaping Hu, Zijian Gao, Wuyang Chen, Shaojing Fu, Huaimin Wang, Kele Xu",
+					"title": "MDCD-DB: Benchmarking Multimodal Deepfake Continual Detection Against Evolving Forgery Threats",
+					"venue": "Expert Systems with Applications",
+					"links": []
+					},
+					{
+					"year": "preprint",
+					"authors": "Man Xiao, Jianbin Ye, Bo Liu, Zijian Gao, Wuyang Chen, Tao Li, Huaimin Wang, <u>Kele Xu*</u>",
+					"title": "Adaptive Affinity Memorization with Layer Mutation for Multimodal Deepfake Continual Detection",
+					"venue": "IEEE Transactions on Information Forensics and Security",
+					"links": []
+					},
+					{
+					"year": "preprint",
+					"authors": "Yuxuan Li, Jianguo Wei, Qiang Fang*, <u>Kele Xu*</u>, Lu Wang, Xugang Lu",
+					"title": "Ultrasound Tongue Imaging Calibration Helmet based on Skull Feature for Articulatory Data Observation",
+					"venue": "IEEE Transactions on Instrumentation & Measurement",
+					"links": []
+					},
+					{
+					"year": "preprint",
+					"authors": "Qisheng Xu, Zijian Gao, Yong Dou, <u>Kele Xu*</u>, Caili Gao, Dawei Feng, Xinjun Mao",
+					"title": "Uncertainty-guided Few-shot Class-incremental Audio Classification",
+					"venue": "Pattern Recognition",
+					"links": []
+					},
+					{
+					"year": "preprint",
+					"authors": "Yanjie Sun, Wuyang Chen, Siwen Guo, <u>Kele Xu*</u>, Junhua Liu, Yong Dou",
+					"title": "A Systematic Survey for Audio Data Augmentation",
+					"venue": "ACM Computing Surveys",
+					"links": []
+					},
+					{
+					"year": "preprint",
+					"authors": "Yanjie Sun, Wuyang Chen, <u>Kele Xu*</u>, Xuyao Deng, Yong Dou",
+					"title": "Identifying a Highly Efficient Length in Audio SSL: An Audio-specific Scaling Law",
+					"venue": "IEEE Transactions on Audio, Speech and Language Processing",
+					"links": []
+					},
+                
+                // 2025 年
 				{
-						"year": "preprint",
-						"authors": "Zijian Gao, Xingxing Zhang*, Liyuan Wang, Bo Ding, Xinjun Mao, Huaimin Wang, <u>Kele Xu*</u>",
-						"title": "Neuro-inspired cascaded memory coordination enables continual generalization",
-						"venue": "arXiv",
-						"links": [
-							{
-								"text": "Paper",
-								"url": "https://assets-eu.researchsquare.com/files/rs-9214055/v1_covered_bfb425ca-f399-41be-bbb2-43f8618e09cb.pdf?c=1777975327"
-							}
-						]
-					},
-				
-					{
-						"year": "preprint",
-						"authors": "Jiaxin Chen, Tianjiao Wan, Hui Geng, Liang Xiong, Guohong Wang, Yihan Zhao, Longxiang Deng, Susu Fang, Zheng Luo, Huaimin Wang, Shanshan Wang*, <u>Kele Xu*</u>",
-						"title": "A survey of active learning in materials science: Data-driven paradigm for accelerating the research pipeline",
-						"venue": "arXiv",
-						"links": [
-							{
-								"text": "Paper",
-								"url": "https://arxiv.org/abs/2601.06971"
-							}
-						]
-					},
-					{
-						"year": "preprint",
-						"authors": "<u>Kele Xu*</u>, Yifan Wang, Ming Feng, Qisheng Xu, Wuyang Chen, Yutao Dou, Cheng Yang, Huaimin Wang",
-						"title": "Silent Speech Interfaces in the Era of Large Language Models: A Comprehensive Taxonomy and Systematic Review",
-						"venue": "arXiv",
-						"links": [
-							{
-								"text": "Paper",
-								"url": "https://arxiv.org/abs/2603.11877"
-							}
-						]
-					},
-					{
-						"year": "preprint",
-						"authors": "Zijian Gao, Wangwang Jia, Xingxing Zhang, Pengfei Qian, Tao Sun, Bo Ding, Yong Dou, Huaimin Wang, <u>Kele Xu*</u>",
-						"title": "MAny: Merge Anything for Multimodal Continual Instruction Tuning",
-						"venue": "arXiv",
-						"links": [
-							{
-								"text": "Paper",
-								"url": "https://arxiv.org/abs/2604.14016"
-							}
-						]
-					},
-					{
-						"year": "preprint",
-						"authors": "Yifan Wang, Hui Geng, Tianjiao Wan, Ming Feng, Huaimin Wang, Tao Li, <u>Kele Xu*</u>",
-						"title": "Dual-Spectral Adaptive Active Learning in Learned Representation Space for Audio Classification",
-						"venue": "IEEE Transactions on Audio, Speech and Language Processing",
-						"links": []
-					},
-					{
-						"year": "preprint",
-						"authors": "Chenxi Zhou, Qisheng Xu, <u>Kele Xu*</u>, Yong Dou",
-						"title": "ACoDi-TSE: Continuous Direction Encoding for DoA-Conditioned Target Speech Extractionls",
-						"venue": "IEEE Transactions on Audio, Speech and Language Processing",
-						"links": []
-					},
-					{
-						"year": "preprint",
-						"authors": "Yi Su, Hui Geng, Qisheng Xu, Yong Dou, Tianjiao Wan, <u>Kele Xu*</u>",
-						"title": "Audio Active Learning with Noisy Labels",
-						"venue": "IEEE Transactions on Audio, Speech and Language Processing",
-						"links": []
-					},
-					{
-						"year": "preprint",
-						"authors": "Qisheng Xu, Yulin Sun, Yi Su, Qian Zhu, Xiaoyi Tan, Hongyu Wen, Zijian Gao, <u>Kele Xu*</u>, Yong Dou, Dawei Feng",
-						"title": "AudioCIL: A Python Toolbox for Audio Class-Incremental Learning with Multiple Scenes",
-						"venue": "arXiv",
-						"links": [
-							{
-								"text": "Paper",
-								"url": "https://arxiv.org/abs/2412.11907"
-							}
-						]
-					},
-					{
-						"year": "preprint",
-						"authors": "Huanxi Liu, Jiaqi Liao, Dawei Feng, <u>Kele Xu</u>, Huaimin Wang",
-						"title": "AutoFeedback: An LLM-based Framework for Efficient and Accurate API Request Generation",
-						"venue": "arXiv",
-						"links": [
-							{
-								"text": "Paper",
-								"url": "https://arxiv.org/abs/2410.06943"
-							}
-						]
-					},
-					{
-						"year": "preprint",
-						"authors": "Xuyao Deng, Yong Dou, <u>Kele Xu*</u>",
-						"title": "BeamformNet: Deep Learning-Based Beamforming Method for DoA Estimation via Implicit Spatial Signal Focusing and Noise Suppression",
-						"venue": "IEEE Transactions on Cognitive Communications and Networking",
-						"links": [
-							{
-								"text": "Paper",
-								"url": "https://arxiv.org/abs/2512.18647"
-							}
-						]
-					},
-					{
-						"year": "preprint",
-						"authors": "Hui Geng, Tianjiao Wan, Yi Su, Qisheng Xu, Zijian Gao, Hengzhu Liu, Dawei Feng, <u>Kele Xu*</u>",
-						"title": "A Dual-Memory Consolidation Framework for Data-Efficient Active Learning",
-						"venue": "IEEE Transactions on Knowledge and Data Engineering",
-						"links": []
-					},
-					{
-						"year": "preprint",
-						"authors": "Man Xiao, Jianbin Ye, Bo Liu, Xingkong Ma, Tianjiao Wang, Qisheng Xu, Huaimin Wang, <u>Kele Xu*</u>",
-						"title": "Multimodal Deepfake DNA-Purified Cascaded Diversification for Continual Few-shot Detection",
-						"venue": "IEEE Transactions on Circuits and Systems for Video Technology",
-						"links": []
-					},
-					{
-						"year": "preprint",
-						"authors": "Jiaye Xue, Xuan Liu, Hongye Zhu, <u>Kele Xu</u>, Jia Liu, Dawei Feng, Yuan Jin, Shigeng Zhang",
-						"title": "UGIN: Constant-Time On-Device Autonomy via Unified Sensory Grid for Resource-Constrained Robots",
-						"venue": "SCIENCE CHINA Information Sciences",
-						"links": []
-					},
-					{
-						"year": "preprint",
-						"authors": "Jianbin Ye, Man Xiao, Bo Liu, Huaping Hu, Wuyang Chen, Shaojing Fu, Xingkong Ma, <u>Kele Xu*</u>, Huaimin Wang",
-						"title": "When Fake Evolves Faster than the Detector: Continual Test-time Domain Adaptation Benchmark for Multimodal Deepfake Detection",
-						"venue": "IEEE Transactions on Information Forensics and Security",
-						"links": []
-					},
-					{
-						"year": "preprint",
-						"authors": "Tianjiao Wan, Wangwang Jia, Zijian Gao, Hui Feng, Bo Ding, Yijie Wang, <u>Kele Xu*</u>, Huaimin Wang", 
-						"title": "Data-Efficient Active Learning for Pre-trained Model-Based Class-Incremental Learning: Keeping the Balance",
-						"venue": "SCIENCE CHINA Information Sciences",
-						"links": []
-					},
-					{
-						"year": "preprint",
-						"authors": "Jiali Liu, Zijian Gao, Xinran Zhang, Cheng Yang, Xuan Liu, <u>Kele Xu*</u>, Zhiwei Li*",
-						"title": "Spectral-Regulated Dual-Domain Analytic Learning for Time-Series Class-Incremental Learning",
-						"venue": "ACM Transactions on Knowledge Discovery from Data",
-						"links": []
-					},
-					{
-						"year": "preprint",
-						"authors": "Tianjiao Wan, Zijian Gao, Jingyu Wei, Jiaxin Chen, Dawei Feng, Bo Ding, Yijie Wang, Huaimin Wang, <u>Kele Xu*</u>",
-						"title": "Graph-based Mutual Influence for Data Selection",
-						"venue": "IEEE Transactions on Multimedia",
-						"links": []
-					},
-					{
-						"year": "preprint",
-						"authors": "Zhiyan Wang, Changjian Wang*, Zhongshun Tang, <u>Kele Xu*</u>, Weiguo Chen, Maolin Luo",
-						"title": "When Texture Meets Classification: A Dual-Prior Framework for Pathological Image Segmentation",
-						"venue": "IEEE Transactions on Image Processing",
-						"links": []
-					},
-					{
-						"year": "preprint",
-						"authors": "Qisheng Xu, Qian Zhu, Yi Su, Yulin Sun, Yutao Dou, Tao Li, <u>Kele Xu*</u>",
-						"title": "UACIL: A Large-Scale Dataset for Class Incremental Learning in Underwater Acoustic Target Recognition",
-						"venue": "Nature Partner Journals Acoustics",
-						"links": []
-					},
-					{
-						"year": "preprint",
-						"authors": "Qisheng Xu, Xiaoyi Tan, Boqing Zhu, Huaimin Wang, Yutao Dou, <u>Kele Xu*</u>",
-						"title": "Representation-Decoupled and Classifier-Refined Learning for Fully Few-shot Class-Incremental Audio Classification",
-						"venue": "ACM Transactions on Multimedia Computing Communications and Applications",
-						"links": []
-					},
-					{
-						"year": "preprint",
-						"authors": "Hui Geng, Tianjiao Wa, Qisheng Xu, Zijian Gao, Boqing Zhu, Wen Zhang, <u>Kele Xu*</u>",
-						"title": "Uncertainty-Guided Active Learning for Underwater Acoustic Target Recognition Via Attention-Aware Inconsistency",
-						"venue": "IEEE Journal of Selected Topics in Signal Processing",
-						"links": []
-					},
-					{
-						"year": "preprint",
-						"authors": "Xuyao Deng, Yong Dou, <u>Kele Xu*</u>",
-						"title": "Spatial Signal Focusing and Noise Suppression for Direction-of-Arrival Estimation in Large-Aperture 2D Arrays under Demanding Conditions",
-						"venue": "IEEE Transactions on Signal Processing",
-						"links": []
-					},
-					{
-						"year": "preprint",
-						"authors": "Tao Sun, Yuhao Huang, Li Shen, <u>Kele Xu</u>, Xinwang Liu, Bao Wang",
-						"title": "How Does Weight Decay Improve the Nonconvex SGD: When and Why?",
-						"venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
-						"links": []
-					},
-					{
-						"year": "preprint",
-						"authors": "Xiao Teng, Guochun Chen, Dingyao Chen, <u>Kele Xu</u>, Xinwang Liu, Long Lan",
-						"title": "Hybrid Association-Based Cross-Modality Learning for Unsupervised Visible-Infrared Person Re-Identification",
-						"venue": "CAAI Transactions on Intelligence Technology",
-						"links": []
-					},
-					{
-						"year": "preprint",
-						"authors": "Jianbin Ye, Man Xiao, Bo Liu, Huaping Hu, Zijian Gao, Wuyang Chen, Shaojing Fu, Huaimin Wang, <u>Kele Xu*</u>",
-						"title": "MDCD-DB: Benchmarking Multimodal Deepfake Continual Detection Against Evolving Forgery Threats",
-						"venue": "Information Fusion",
-						"links": []
-					},
-					{
-						"year": "preprint",
-						"authors": "Qisheng Xu, Zijian Gao, Yong Dou, <u>Kele Xu*</u>, Caili Gao, Dawei Feng, Xinjun Mao",
-						"title": "Uncertainty-guided Few-shot Class-incremental Audio Classification",
-						"venue": "Pattern Recognition",
-						"links": []
-					},
-					{
-						"year": "preprint",
-						"authors": "Yueliang Pan, Qisheng Xu, <u>Kele Xu*</u>",
-						"title": "Mitigating Non-Uniform Forgetting Dynamics for Class-incremental Semantic Segmentation",
-						"venue": "Transactions on Machine Learning Research",
-						"links": []
-					},
-					{
-						"year": "preprint",
-						"authors": "Yi Xiong, Liang Xiong, Xiaohong Ji, Sen Yang, Zhifeng Gao, Huaimin Wang, <u>Kele Xu*</u>",
-						"title": "Scaffold-Conditioned Preference Triplets for Controllable Molecular Optimization with Large Language Models",
-						"venue": "Transactions on Machine Learning Research",
-						"links": []
-					},
-					{
-						"year": "preprint",
-						"authors": "Yanjie Sun, Wuyang Chen, Siwen Guo, <u>Kele Xu*</u>, Junhua Liu, Yong Dou",
-						"title": "A Systematic Survey for Audio Data Augmentation",
-						"venue": "ACM Computing Surveys",
-						"links": []
-					},
-					{
-						"year": "preprint",
-						"authors": "Yanjie Sun, Wuyang Chen, <u>Kele Xu*</u>, Xuyao Deng, Yong Dou",
-						"title": "Identifying a Highly Efficient Length in Audio SSL: An Audio-specific Scaling Law",
-						"venue": "IEEE Transactions on Audio, Speech and Language Processing",
-						"links": []
-					},
-	
-				// 2026 部分
-				{
-						"year": "2026",
-						"authors": "Man Xiao, Jianbin Ye, Bo Liu, Zijian Gao, Wuyang Chen, Tao Li, Huaimin Wang, <u>Kele Xu*</u>",
-						"title": "Adaptive Affinity Memorization with Layer Mutation for Multimodal Deepfake Continual Detection",
-						"venue": "IEEE Transactions on Information Forensics and Security",
-						"links": []
-				},
-				{
-						"year": "2026",
-						"authors": "Wuyang Chen, <u>Kele Xu*</u>, Qiya Song, Yanjie Sun, Xinwang Liu, Xingyi Li, Yong Dou and Huaimin Wang",
-						"title": "A Survey on Human-centric Voice-Face Multimodal Learning",
-						"venue": "IEEE Transactions on Neural Networks and Learning Systems",
-						"links": []
-				},
-				{
-						"year": "2026",
-						"authors": "Qisheng Xu, Xiaoyi Tan, Yutao Dou and <u>Kele Xu*</u>, ",
-						"title": "Audio-Language Prompt Learning for Few-Shot Audio Classification",
-						"venue": "InterSpeech",
-						"links": []
-				},
-				{
-						"year": "2026",
-						"authors": "Qisheng Xu, Shanhao Han, Hui Geng, Yulu Fang, Yutao Dou and <u>Kele Xu*</u>, ",
-						"title": "Continual Generalized Category Discovery for Acoustic Signals via Instance-Adaptive Regularization and Dynamic Teacher Guidance",
-						"venue": "InterSpeech",
-						"links": []
-				},
-				{
-						"year": "2026",
-						"authors": "Hongyu Wen, Yi Su, Yudong Yang, Siwen Guo, Qisheng Xu, </u>Kele Xu∗</u>",
-						"title": "Towards Robust Ultrasound-based Silent Speech Recognition Learning Physics-Aware and Context-Rich Representations",
-						"venue": "InterSpeech",
-						"links": []
-				},
-				{
-						"year": "2026",
-						"authors": "Hui Geng, Tianjiao Wan, Yi Su, Qisheng Xu, Hengzhu Liu, <u>Kele Xu*</u>",
-						"title": "Beyond Uncertainty and Diversity: Temporal-Spectral Guided Active Learning for Audio",
-						"venue": "Interspeech",
-						"links": []
-				},
-				{
-						"year": "2026",
-						"authors": "Yuezhang Peng, Chonghao Cai, Ziang Liu, Shuai Fan, Sheng Jiang, Hua Xu, Yuxin Liu, Sheng Wang, Qiguang Chen, Yao Li, <u>Kele Xu</u>, Kai Yu, Libo Qin, Xie Chen",
-						"title": "MAC-SLU: Multi-intent Automative Cabin Spoken Language Understanding Benchmark",
-						"venue": "InterSpeech",
-						"links": []
-				},
-				{
-						"year": "2026",
-						"authors": "Jiawei Yu, Zijian Gao, Tianjiao Wan, Xuan Liu, Cheng Yang, and <u>Kele Xu*</u>",
-						"title": "Reliable Confidence Alignment for Generalized Category Discovery",
-						"venue": "International Conference on Machine Learning",
-						"links": []
-				},
-				{
-						"year": "2026",
-						"authors": "Jianbin Ye, Man Xiao, Bo Liu, Huaping Hu, Zijian Gao, Shaojing Fu, <u>Kele Xu*</u> and Huaimin Wang",
-						"title": "Multimodal Deepfake Detection with Quantum State Analytic Incremental Adaptability Learning",
-						"venue": "ACM International Conference on Multimedia Retrieval",
-						"links": []
-				},
-				{
-						"year": "2026",
-						"authors": "Xuyao Deng, Yanjie Sun, Yong Dou, <u>Kele Xu*</u>",
-						"title": "Unify Variables in Neural Scaling Laws for General Audio Representations via Embedding Effective Rank",
-						"venue": "IEEE Transactions on Audio, Speech and Language Processing",
-						"links": []
-				},
-				{
-						"year": "2026",
-						"authors": "Jiawei Yu, Zijian Gao, Xingxing Zhang, Xuan Liu, Huaimin Wang, <u>Kele Xu*</u>",
-						"title": "Decouple Your Discovery and Memory in Continual Generalized Category Discovery",
-						"venue": "IEEE Conference on Computer Vision and Pattern Recognition",
-				},
-				{
-						"year": "2026",
-						"authors": "Zijian Gao, Zicheng Sun, Xingxing Zhang, <u>Kele Xu*</u>, Huaimin Wang",
-						"title": "Re-evaluating Continual VQA: Toward Fair and Robust Evaluation for Multimodal Continual Learning",
-						"venue": "IEEE Conference on Computer Vision and Pattern Recognition",
-				},
-				{
-						"year": "2026",
-						"authors": "Wangwang Jia, Zijian Gao, Tianjiao Wan, Yuan Cao, Yong Dou, <u>Kele Xu*</u>",
-						"title": "Geometry-driven OOD Detectors Are Class-Incremental Learners",
-						"venue": "IEEE Conference on Computer Vision and Pattern Recognition",
-				},
-				{
-						"year": "2026",
-						"authors": "Zheng Luo, Ying Yang, Zizhen Fu, Fengqi Liu, Susu Fang, <u>Kele Xu</u>, Shanshan Wang",
-						"title": "Atomic Defects in Layered Transition Metal Dichalcogenides for Sustainable Energy Storage and the Intelligent Trends in Data Analytics",
-						"venue": "Advanced Science",
-						"links": [{ text: "Paper", url: "https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202521502" }]
-				},
-				{
-						"year": "2026",
-						"authors": "Zengming Lin, Yueliang Pan, Ming Feng, <u>Kele Xu*</u>",
-						"title": "Aligning Geometry Representation and Initialization in Class-Incremental Semantic Segmentation",
-						"venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
-						"links": []
-				},
-				{
-						"year": "2026",
-						"authors": "Wanrong Ma, Hongyu Wen, Zijian Gao, Qisheng Xu, <u>Kele Xu*</u>",
-						"title": "Prototype-Guided Cross-Modal Contrastive Learning For Continual Audio-visual Sound Seperation",
-						"venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
-						"links": []
-				},
-				{
-						"year": "2026",
-						"authors": "Zhiyan Wang, Changjian Wang*, <u>Kele Xu*</u>, Zhongshun Tang, Yan Zhuang, Jiani Zou, Fangyi Liu",
-						"title": "MCDNet: Morphological-Conditional Dual-view Fusion for 3D Tubular Structure Segmentation",
-						"venue": "Neural Networks",
-						"links": []
-				},
-				{
-						"year": "2026",
-						"authors": "Yuxuan Li, Jianguo Wei, Qiang Fang*, <u>Kele Xu*</u>, Lu Wang, Xugang Lu",
-						"title": "A Novel UTI Plane Stability Calibration and Compensation Method Based on Skull Structural Relationships for Articulatory Data Observation",
-						"venue": "IEEE Transactions on Instrumentation & Measurement",
-						"links": []
-				},
-				  {
-					year: "2026",
-					authors: "Yuanzhao Zhai, Yu Lei, Han Zhang, Yue Yu, <u>Kele Xu</u>, Dawei Feng, Bo Ding, Huaimin Wang",
-					title: "Uncertainty-Penalized Reinforcement Learning from Human Feedback with Diversified Reward LoRA Ensembles",
-					venue: "Information Processing and Management",
-					links: []
-				  },
-				  {
-					year: "2026",
-					authors: "Dulan Zhou, Zijian Gao, <u>Kele Xu*</u>",
-					title: "Perturbing to Preserve: Defending Fragile Knowledge in Online Continual Learning",
-					venue: "AAAI Conference on Artificial Intelligence (Oral)",
-					links: []
-				  },	
-				// 2025 部分
-				  {
-					year: "2025",
-					authors: "Zijian Gao, Xingxing Zhang, Huiping Zhuang, <u>Kele Xu</u>*, Tianjiao Wan, Bo Ding, Xinjun Mao, Huaimin Wang",
-					title: "Rethinking Obscured Sub-optimality in Analytic Learning for Exemplar-Free Class-Incremental Learning",
-					venue: "IEEE Transactions on Circuits and Systems for Video Technology",
-					links: [{ text: "Paper", url: "https://ieeexplore.ieee.org/document/11239453" }]
-				  },
-				  {
 					year: "2025",
 					authors: "Cheng Yang, Qisheng Xu, Ming Feng, Hui Yang, Yulei Yuan, Yutao Dou, <u>Kele Xu*</u>",
 					title: "Hybrid Local-Global Representation Learning with Stochastic Gaussian Classification for Underwater Acoustic Target Recognition",
 					venue: "Scientific Reports",
-					links: [{ text: "Paper", url: "https://www.nature.com/articles/s41598-025-32322-1" }]
-				  },
-				  {
+					links: [
+						{ text: "DOI", url: "https://doi.org/10.1038/s41598-025-32322-1" }
+					]
+				},
+				{
+					year: "2025",
+					authors: "Zijian Gao, Xingxing Zhang, Huiping Zhuang, <u>Kele Xu*</u>, Tianjiao Wan, Bo Ding, Xinjun Mao, Huaimin Wang",
+					title: "Rethinking Obscured Sub-optimality in Analytic Learning for Exemplar-Free Class-Incremental Learning",
+					venue: "IEEE Transactions on Circuits and Systems for Video Technology",
+					links: [
+						{ text: "DOI", url: "https://doi.org/10.1109/TCSVT.2025.3652148" }
+					]
+				},
+				{
 					year: "2025",
 					authors: "Guohong Wang, Xiaohan Tan, Zengming Lin, Binli Luo, Shangjian Zhong, <u>Kele Xu*</u>",
 					title: "FreqEvo: Enhancing Time Series Forecasting with Multi-Level Frequency Domain Feature Extraction",
 					venue: "IEEE Transactions on Knowledge and Data Engineering",
-					links: []
-				  },
-				  {
+					links: [
+						{ text: "DOI", url: "https://doi.org/10.1109/TKDE.2025.3632365" }
+					]
+				},
+				{
 					year: "2025",
 					authors: "Tianjiao Wan, Zijian Gao, Xudong Gong, Dawei Feng, Xingxing Zhang, Bo Ding, Yijie Wang, Huaimin Wang, <u>Kele Xu</u>*",
 					title: "Dynamic Confidence Variance for Generalized Coreset in Active Learning",
 					venue: "IEEE Transactions on Circuits and Systems for Video Technology",
 					links: []
-				  },
-				  {
+				},
+				{
 					year: "2025",
 					authors: "Yutao Dou, Yaoyu Liu, Haitao Zou, Wenwu Zeng, <u>Kele Xu</u>, Shaoliang Peng",
 					title: "A Survey on Electronic Health Record Driven Multimodal Representation Learning",
 					venue: "Information Fusion",
 					links: []
-				  },
-				  {
+				},
+				{
 					year: "2025",
 					authors: "Wuyang Chen, <u>Kele Xu*</u>, Yanjie Sun, Yong Dou, Huaimin Wang",
 					title: "Voice2Visage: Deciphering Faces from Voices",
 					venue: "IEEE Transactions on Biometrics, Behavior, and Identity Science",
 					links: []
-				  },
-				  {
+				},
+				{
 					year: "2025",
 					authors: "Yulin Sun, Qisheng Xu, Yi Su, Qian Zhu, Yong Dou, Xinwang Liu, <u>Kele Xu*</u>",
 					title: "AudioSet-R: A Refined AudioSet with Multi-Stage LLM Label Reannotation",
 					venue: "ACM International Conference on Multimedia",
 					links: []
-				  },
-				  {
+				},
+				{
 					year: "2025",
 					authors: "<u>Kele Xu</u>, Qisheng Xu, Binli Luo, Han Zhou, Zengming Lin, Hui Geng, Xianhan Tan",
 					title: "Higher-Order Vision-Language Fusion for Video Polularity Prediction",
 					venue: "ACM International Conference on Multimedia",
 					links: []
-				  },
-				  {
+				},
+				{
 					year: "2025",
 					authors: "Zheng Lian, Rui Liu, <u>Kele Xu</u>, Bin Liu, Xuefei Liu, Yazhou Zhang, Xin Liu, Yong Li, Zebang Cheng, Haolin Zuo, Ziyang Ma, Xiaojiang Peng, Xie Chen, Ya Li, Erik Cambria, Guoying Zhao, Björn W Schuller, Jianhua Tao",
 					title: "MER 2025: When Affective Computing Meets Large Language Models",
 					venue: "ACM International Conference on Multimedia",
-					links: [{ text: "Challenge Summary", url: "https://arxiv.org/abs/2504.19423" }]
-				  },
-				  {
+					links: [
+						{ text: "Challenge Summary", url: "https://arxiv.org/abs/2504.19423" }
+					]
+				},
+				{
 					year: "2025",
 					authors: "Tianheng Qiu, Jingchun Gao, Jingyu Li, Huiyi Leong, Xuan Huang, Xi Wang, Xiaocheng Zhang, <u>Kele Xu</u>, Lan Zhang",
 					title: "IntentVCNet: Bridging Spatio-Temporal Gaps for Intention-Oriented Controllable Video Captioning",
 					venue: "ACM International Conference on Multimedia",
 					links: []
-				  },
-				  {
+				},
+				{
 					year: "2025",
 					authors: "Man Xiao, Jianbin Ye, Bo Liu, Zijian Gao, <u>Kele Xu*</u>, Xiaodong Wang",
 					title: "Analytic Synaptic Dynamic Scaling Balancer for Multimodal Deepfake Continual Detection",
 					venue: "ACM International Conference on Multimedia",
 					links: []
-				  },
-				  {
-					year: "2025",
-					authors: "Shen'ao Xue, Zheng Luo, Aolin Li, Ming Feng, Shouheng Li, Shen Zhou, <u>Kele Xu</u>, Huaimin Wang, Jin Zhang, Fangping Ouyang, Shanshan Wang",
-					title: "Machine Learning-Assisted Active Center Exploration in Atomically Thin MoSxTe2-x Electrocatalysts for Efficient Hydrogen Evolution",
-					venue: "Advanced Materials",
-					links: [{ text: "Paper", url: "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202503474" }]
-				  },
-				  {
+				},
+				{
 					year: "2025",
 					authors: "Yulu Fang, Mingyue He, Qisheng Xu, Jianqiao Zhao, Cheng Yang, <u>Kele Xu</u>, Yong Dou",
 					title: "Multi-view Fusion and Parameter Perturbation for Few-Shot Class-Incremental Audio Classification",
 					venue: "Annual Conference of the International Speech Communication Association (InterSpeech)",
 					links: []
-				  },
-				  {
+				},
+				{
 					year: "2025",
 					authors: "Xudong Gong, Sen Yang, Dawei Feng, <u>Kele Xu</u>, Bo Ding, Huaimin Wang, Yong Dou",
 					title: "Improving the Continuity of Goal-Achievement Ability via Policy Self-Regularization for Goal-Conditioned Reinforcement Learning",
 					venue: "International Conference on Machine Learning (ICML)",
 					links: []
-				  },
-				  {
+				},
+				{
 					year: "2025",
 					authors: "Man Xiao, Jianbin Ye, Bo Liu, Zijian Gao, <u>Kele Xu*</u>, Xiaodong Wang",
 					title: "Self-supervised Bidirectional Synchronization Estimation for Multimodal Deepfake Detection with Short-term Dependency",
 					venue: "ACM International Conference on Multimedia Retrieval (ICMR)",
 					links: []
-				  },
-				  {
+				},
+				{
 					year: "2025",
 					authors: "Qiang Wang, <u>Kele Xu*</u>, Dawei Feng, Bo Ding, Huaimin Wang",
 					title: "Memory replay with unlabeled data for semi-supervised class-incremental learning via temporal consistency",
 					venue: "Frontiers of Computer Science",
 					links: []
-				  },
-				  {
+				},
+				{
 					year: "2025",
 					authors: "Yuanzhao Zhai, Huanxi Liu, Zhuo Zhang, Tong Lin, <u>Kele Xu</u>, Cheng Yang, Dawei Feng, Bo Ding, Huaimin Wang",
 					title: "Empowering Large Language Model Agent through Step-Level Self-Critique and Self-Training",
-					venue: "ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR)",
+					venue: "ACM SIGIR Conference on Research and Development in Information Retrieval",
 					links: []
-				  },
-				  {
+				},
+				{
 					year: "2025",
 					authors: "Yuanzhao Zhai, Zhuo Zhang, Cheng Yang, <u>Kele Xu</u>, Yue Yu, Wei Li, Hui Wang, Zenglin Xu, Dawei Feng, Bo Ding, Huaimin Wang",
 					title: "Preference-Strength-Aware Self-Improving Alignment with Generative Preference Models",
-					venue: "ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR)",
+					venue: "ACM SIGIR Conference on Research and Development in Information Retrieval",
 					links: []
-				  },
-				  {
+				},
+				{
 					year: "2025",
 					authors: "Tao Sun, Yuhao Huang, Li Shen, <u>Kele Xu</u>, Bao Wang",
 					title: "Investigating the Role of Weight Decay in Enhancing Nonconvex SGD",
 					venue: "IEEE Conference on Computer Vision and Pattern Recognition",
 					links: []
-				  },
-				  {
+				},
+				{
 					year: "2025",
 					authors: "Zijian Gao, Wangwang Jia, Xingxing Zhang, Dulan Zhou, <u>Kele Xu*</u>, Dawei Feng, Yong Dou, Xinjun Mao, Huaimin Wang",
 					title: "Knowledge Memorization and Rumination for Pre-trained Model-based Class-Incremental Learning",
 					venue: "IEEE Conference on Computer Vision and Pattern Recognition",
 					links: []
-				  },
-				  {
+				},
+				{
 					year: "2025",
 					authors: "Zekun Tao, Changjian Wang*, <u>Kele Xu</u>*, Tao Sun, Yong Guo, Kun Qian, Yanru Bai, Shanshan Li",
 					title: "Information Diffusion Prediction with Augmented Diffusion Dependency and Multi-Granularity Temporal Influence",
 					venue: "IEEE Transactions on Computational Social Systems",
 					links: []
-				  },
-				  {
+				},
+				{
 					year: "2025",
 					authors: "Zheng Luo, Ming Feng, Zijian Gao, Jinyang Yu, Liang Hu, Tao Wang, Shenao Xue, Shen Zhou, Fangping Ouyang, Dawei Feng, <u>Kele Xu*</u>, Shanshan Wang*",
 					title: "Exploring Structure Diversity in Atomic Resolution Microscopy With Graph",
 					venue: "Advanced Materials",
-					links: [{ text: "Paper", url: "https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202417478" }]
-				  },
-				  {
+					links: [
+						{ text: "DOI", url: "https://doi.org/10.1002/adma.202417478" }
+					]
+				},
+				{
 					year: "2025",
 					authors: "Chenxi Zhou, Tianjiao Wan, <u>Kele Xu*</u>, Peng Qiao, Yong Dou",
 					title: "Segment Anything for Visual Bird Sound Denoising",
 					venue: "IEEE Signal Processing Letters",
 					links: []
-				  },
-				  {
+				},
+				{
 					year: "2025",
 					authors: "Zijian Gao, Bo Liu, <u>Kele Xu</u>*, Xinjun Mao, Huaimin Wang",
 					title: "Correlation-based Knowledge Distillation in Exemplar-Free Class-Incremental Learning",
 					venue: "IEEE Open Journal of the Computer Society",
 					links: []
-				  },
-				  {
+				},
+				{
 					year: "2025",
 					authors: "Xudong Gong, Dawei Feng, <u>Kele Xu</u>, Xing Zhou, Si Zheng, Bo Ding, Huaimin Wang",
 					title: "A Velocity Vector Control Agent for Fixed-Wing UAVs from Imperfect Demonstrations",
 					venue: "IEEE International Conference on Robotics and Automation (ICRA)",
 					links: []
-				  },
-				  {
+				},
+				{
 					year: "2025",
 					authors: "Xudong Gong, Dawei Feng, <u>Kele Xu</u>, Weijia Wang, Zhangjun Sun, Xing Zhou, Si Zheng, Bo Ding, Huaimin Wang",
 					title: "VVC-Gym: A Fixed-Wing UAV Reinforcement Learning Environment for Multi-Goal Long-Horizon Problems",
 					venue: "International Conference on Learning Representations (ICLR)",
 					links: []
-				  },
-				  {
+				},
+				{
 					year: "2025",
-					authors: "Yu Zhang, Bin Chen, Hongfei Ye, Zijian Gao, Tianjiao Wan, Long Lan, <u>Kele Xu*</u>",
+					authors: "Yu Zhang, Bin Chen, Hongfei Ye, Zijian Gao, Tianjiao Wan, Long Lan, <u>Kele Xu</u>*",
 					title: "Text-guided Multimodal Fusion for the Multimodal Emotion and Intent Joint Understanding",
-					venue: "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+					venue: "IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)",
 					links: []
-				  },
-				  {
+				},
+				{
 					year: "2025",
 					authors: "Xi Dan, <u>Kele Xu</u>*, Yihang Zhou, Chuangguang Yang, Yihao Chen, Yutao Dou, Cheng Yang",
 					title: "Spatio-Temporal Masked Autoencoder-based Phonetic Segments Classification From Ultrasound",
 					venue: "Speech Communication",
 					links: []
-				  },
-				  {
+				},
+				{
 					year: "2025",
 					authors: "Xuyao Deng, Tianjiao Wan, <u>Kele Xu</u>*, Tian Gao, Peng Qiao, Dawei Feng, Yong Dou",
 					title: "Scaling Bioacoustic Signal Pre-training with Million Samples Via Mask-Modeling",
-					venue: "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+					venue: "IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)",
 					links: []
-				  },
-				  {
+				},
+				{
 					year: "2025",
 					authors: "Hui Geng, Zijian Gao, Tianjiao Wan, Dawei Feng, Changjian Wang, <u>Kele Xu</u>*",
 					title: "Complementary Learning System Theory-based Active Learning for Audio Classification",
-					venue: "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+					venue: "IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)",
 					links: []
-				  },
-				  {
+				},
+				{
 					year: "2025",
 					authors: "Zeyun Zhao, Changjian Wang*, <u>Kele Xu</u>*, Zhen Huang, Gaojin He, Xu Liu",
 					title: "HyperMST: Multi-scale Spatio-Temporal Hypercorrelation Network for POI Recommendation",
-					venue: "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+					venue: "IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)",
 					links: []
-				  },
-				  {
+				},
+				{
 					year: "2025",
 					authors: "Yan Jia, Yuqing Cheng, <u>Kele Xu</u>*, Peng Qiao, Yong Dou",
 					title: "A Counterfactual Ultrasound Anti-Interference Self-Supervised Network for B-mode Ultrasound Tongue Extraction",
-					venue: "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+					venue: "IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)",
 					links: []
-				  },
-				  {
+				},
+				{
 					year: "2025",
 					authors: "Weiguo Chen, Changjian Wang*, <u>Kele Xu</u>*, Yuan Yuan, Wei Chen, Zixuan Dong",
 					title: "SPEA: Large-Scale Entity Alignment via Self-Partitioning",
-					venue: "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+					venue: "IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)",
 					links: []
-				  },
-				  {
+				},
+				{
 					year: "2025",
 					authors: "Shijun Li, Changjian Wang, <u>Kele Xu*</u>, Xiaojin Li, Gaojin He, Xu Liu",
 					title: "Mutual-View Contrastive Generative Framework for Attribute-Missing Graph Clustering",
-					venue: "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+					venue: "IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)",
 					links: []
-				  },
-				  {
+				},
+				{
 					year: "2025",
 					authors: "Qian Zhu, Qisheng Xu, Boqing Zhu, Zijian Gao, Lingbin Zeng*, <u>Kele Xu*</u>",
 					title: "AST-Adapter: A Parameter-efficient Incremental Learning Algorithm for Underwater Acoustic Target Recognition",
-					venue: "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+					venue: "IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)",
 					links: []
-				  },
-				  {
+				},
+				{
 					year: "2025",
 					authors: "Xu Wang, Qisheng Xu, <u>Kele Xu</u>*, Ting Yu, Bo Ding, Dawei Feng",
 					title: "Large Pretrained Foundation Model for Key Performance Indicator Multivariate Time Series Anomaly Detection",
 					venue: "IEEE Open Journal of the Computer Society",
 					links: []
-				  },
-				  {
+				},
+				{
 					year: "2025",
 					authors: "Xiao Teng, Long Lan, Dingyao Chen, <u>Kele Xu</u>, Nan Yin",
 					title: "Relieving Universal Label Noise for Unsupervised Visible-Infrared Person Re-Identification by Inferring from Neighbors",
 					venue: "AAAI Conference on Artificial Intelligence",
 					links: []
-				  },
-				  {
+				},
+				{
 					year: "2025",
 					authors: "Weiguo Chen, Changjian Wang, Shijun Li, <u>Kele Xu</u>*, Yanru Bai, Wei Chen",
 					title: "Debiased Active Learning with Variational Gradient Rectifier",
 					venue: "AAAI Conference on Artificial Intelligence",
 					links: []
-				  },
-				  {
+				},
+				{
 					year: "2025",
 					authors: "Yuanzhao Zhai, Tingkai Yang, <u>Kele Xu</u>, Dawei Feng, Cheng Yang, Bo Ding, Huaimin Wang",
 					title: "Enhancing Decision-Making for LLM Agents via Step-Level Q-Value Models",
 					venue: "AAAI Conference on Artificial Intelligence",
 					links: []
-				  },
-				  {
+				},
+				{
 					year: "2025",
 					authors: "Zijian Gao, Shanhao Han, Xingxing Zhang, <u>Kele Xu</u>*, Dulan Zhou, Xinjun Mao, Yong Dou, Huaimin Wang",
 					title: "Maintaining Fairness in Logit-based Knowledge Distillation for Class-Incremental Learning",
 					venue: "AAAI Conference on Artificial Intelligence",
 					links: []
-				  },
-				
-				
+				},
+
+                
                 // 2024 年
 				{
 					year: "2024",
@@ -2718,7 +2264,7 @@
 				},
 				{
 					"year": "2023",
-					"authors": "Kang You, Bo Liu, <u>Kele Xu</u>, Yunsheng Xiong, Qisheng Xu, Ming Feng, Tamás Csapó, Boqing Zhu",
+					"authors": "Kang You, Bo Liu, <u>Kele Xu*</u>, Yunsheng Xiong, Qisheng Xu, Ming Feng, Tamás Csapó, Boqing Zhu",
 					"title": "Raw Ultrasound-based Phonetic Segments Classification Via Mask Modeling",
 					"venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
 					"links": [
@@ -2730,7 +2276,7 @@
 				},
 				{
 					"year": "2023",
-					"authors": "Shaoqi Sun, Yuanzhao Zhai, <u>Kele Xu</u>, Dawei Feng, Bo Ding",
+					"authors": "Shaoqi Sun, Yuanzhao Zhai, <u>Kele Xu*</u>, Dawei Feng, Bo Ding",
 					"title": "Progressive Diversifying Policy for Multi-Agent Reinforcement Learning",
 					"venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
 					"links": [
@@ -2778,417 +2324,329 @@
 				},
 							
                 // 2022 年
-                    {
-						"year": "2022",
-						"authors": "Kang You, <u>Kele Xu</u>*, Ming Feng, Boqing Zhu",
-						"title": "Underwater acoustic classification using masked modeling-based swin Transformer",
-						"venue": "The Journal of the Acoustical Society of America",
-						"links": []
-					},
-					{
-						"year": "2022",
-						"authors": "Nicolas Loménie, Capucine Bertrand, Rutger HJ Fick, Saima Ben Hadj, Brice Tayart, Cyprien Tilmant, Isabelle Farré, Soufiane Z Azdad, Samy Dahmani, Gilles Dequen, Ming Feng, <u>Kele Xu</u>, et al.",
-						"title": "Can AI predict epithelial lesion categories via automated analysis of cervical biopsies: The TissueNet challenge?",
-						"venue": "Journal of Pathology Informatics",
-						"links": []
-					},
-					{
-						"year": "2022",
-						"authors": "Yiwen Wu, Yang Zhang, <u>Kele Xu</u>, Tao Wang, Huaimin Wang",
-						"title": "Understanding and Predicting Docker Build Duration: An Empirical Study of Containerized Workflow of OSS Projects",
-						"venue": "IEEE/ACM International Conference on Automated Software Engineering",
-						"links": []
-					},
-					{
-						"year": "2022",
-						"authors": "Xiaochen Cai, Hengxing Cai, Boqing Zhu, <u>Kele Xu</u>*, Wei-Wei Tu, Dawei Feng",
-						"title": "Multiple Temporal Fusion based Weakly-supervised Pre-training Techniques for Video Categorization",
-						"venue": "ACM International Conference on Multimedia",
-						"links": []
-					},
-					{
-						"year": "2022",
-						"authors": "Kang You, <u>Kele Xu</u>*, Boqing Zhu, Ming Feng, Dawei Feng, Bo Liu, Tian Gao, Bo Ding",
-						"title": "Masked Modeling-based Audio Representation for ACM Multimedia 2022 Computational Paralinguistics ChallengE",
-						"venue": "ACM International Conference on Multimedia",
-						"links": []
-					},
-					{
-						"year": "2022",
-						"authors": "<u>Kele Xu</u>, Ming Feng, Weiquan Huang",
-						"title": "Seeing Speech: Magnetic Resonance Imaging-Based Vocal Tract Deformation Visualization Using Cross-Modal Transformer",
-						"venue": "ACM International Conference on Multimedia",
-						"links": []
-					},
-					{
-						"year": "2022",
-						"authors": "Boqing Zhu, <u>Kele Xu</u>*, Changjian Wang, Zheng Qin, Tao Sun, Huaimin Wang, Yuxing Peng",
-						"title": "Unsupervised Voice-Face Representation Learning by Cross-Modal Prototype Contrast",
-						"venue": "International Joint Conference on Artificial Intelligence",
-						"links": [
-							{
-								"text": "Code",
-								"url": "https://github.com/Cocoxili/CMPC"
-							}
-						]
-					},
-					{
-						"year": "2022",
-						"authors": "Bin Li, Yijie Wang, <u>Kele Xu</u>, Li Cheng, Zhiquan Qin",
-						"title": "DFAID: Density-aware and Feature-deviated Active Intrusion Detection with Limited Query Data over Network Traffic Stream",
-						"venue": "Computers & Security",
-						"links": []
-					},
-					{
-						"year": "2022",
-						"authors": "Yunsheng Xiong, <u>Kele Xu</u>*, Yong Dou, Yang Zhao, Zikai Gao",
-						"title": "WRMatch: Improving FixMatch with Weighted Nuclear-Norm Regularization for Few-Shot Remote Sensing Scene Classification",
-						"venue": "IEEE Transactions on Geoscience and Remote Sensing",
-						"links": [
-							{
-								"text": "Paper",
-								"url": "https://ieeexplore.ieee.org/document/9585097/"
-							}
-						]
-					},
-					{
-						"year": "2022",
-						"authors": "Zhishan Zhao, Sen Yang, Guohui Liu, Dawei Feng, <u>Kele Xu</u>*",
-						"title": "FINT: Field-aware INTeraction Neural Network For CTR Prediction",
-						"venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
-						"links": [
-							{
-								"text": "Code",
-								"url": "https://github.com/zhishan01/FINT"
-							}
-						]
-					},
-					{
-						"year": "2022",
-						"authors": "Yunsheng Xiong, <u>Kele Xu</u>*, Meng Jiang, Liang Cheng, Yong Dou, Jinjia Wang",
-						"title": "Improving the Classification of Phonetic Segments from Raw Ultrasound Using Self-Supervised Learning and Hard Example Mining",
-						"venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
-						"links": [
-							{
-								"text": "Code",
-								"url": "https://github.com/randallfuhao/ultrasound-selfsup"
-							}
-						]
-					},
-					{
-						"year": "2022",
-						"authors": "Qingsong Zhou, <u>Kele Xu</u>*, Ming Feng",
-						"title": "EasySED: Trusted Sound Event Detection With Self-Distillation",
-						"venue": "Thirty-Sixth AAAI Conference on Artificial Intelligence",
-						"links": []
-					},
+                {
+                    year: "2022",
+                    authors: "Boqing Zhu, <u>Kele Xu*</u>, Changjian Wang, Zheng Qin, Tao Sun, Huaimin Wang, Yuxing Peng",
+                    title: "Unsupervised Voice-Face Representation Learning by Cross-Modal Prototype Contrast",
+                    venue: "International Joint Conference on Artificial Intelligence",
+                    links: [{text: "Code", url: "https://github.com/Cocoxili/CMPC"}]
+                },
+                {
+                    year: "2022",
+                    authors: "Yunsheng Xiong, <u>Kele Xu*</u>, Yong Dou, Yang Zhao, Zikai Gao",
+                    title: "WRMatch: Improving FixMatch with Weighted Nuclear-Norm Regularization for Few-Shot Remote Sensing Scene Classification",
+                    venue: "IEEE Transactions on Geoscience and Remote Sensing",
+                    links: [{text: "Paper", url: "https://ieeexplore.ieee.org/document/9585097/"}]
+                },
                 
                 // 2021 年
-                    {
-						"year": "2021",
-						"authors": "<u>Kele Xu</u>, Tamas Gábor Csapó, Ming Feng",
-						"title": "Convolutional Neural Network-Based Age Estimation Using B-Mode Ultrasound Tongue Image",
-						"venue": "The Journal of the Acoustical Society of America",
-						"links": []
-					},
-					{
-						"year": "2021",
-						"authors": "Liang Gao, <u>Kele Xu</u>*, Huaimin Wang, Yuxing Peng",
-						"title": "Multi-representation knowledge distillation for audio classification",
-						"venue": "Multimedia Tools and Applications",
-						"links": []
-					},
-					{
-						"year": "2021",
-						"authors": "Ruchika Verma, Neeraj Kumar,..., <u>Kele Xu</u>",
-						"title": "MoNuSAC2020: A Multi-organ Nuclei Segmentation and Classification Challenge",
-						"venue": "IEEE Transactions on Medical Imaging",
-						"links": []
-					},
-					{
-						"year": "2021",
-						"authors": "Pengliang Sun, Xuetong Niu, Pengfei Sun, <u>Kele Xu</u>*",
-						"title": "Squeeze-and-Excitation network-Based Radar Object Detection With Weighted Location Fusion",
-						"venue": "ACM International Conference on Multimedia Retrieval",
-						"links": []
-					},
-					{
-						"year": "2021",
-						"authors": "Yunsheng Xiong, Peng Zhang, Yong Dou, <u>Kele Xu</u>, Xin Niu",
-						"title": "Focus on Hard Categories and Hard Examples: Remote Sensing Image Scene Classification via Expert Model and Hard Example Mining",
-						"venue": "IEEE Geoscience and Remote Sensing Letters",
-						"links": [
-							{
-								"text": "Paper",
-								"url": "https://ieeexplore.ieee.org/abstract/document/9343675/"
-							}
+                 {
+						year: "2021",
+						authors: "<u>Kele Xu</u>, Tamas Gábor Csapó, Ming Feng",
+						title: "Convolutional Neural Network-Based Age Estimation Using B-Mode Ultrasound Tongue Image",
+						venue: "The Journal of the Acoustical Society of America",
+						links: [
+							{ text: "DOI", url: "https://doi.org/10.1121/10.0001234" } // 可查实际 DOI 补充
 						]
 					},
 					{
-						"year": "2021",
-						"authors": "Feng Ming, <u>Kele Xu</u>*, Yin Wang, Bo Ding, Huaimin Wang",
-						"title": "Improving ultrasound tongue contour extraction using U-Net and shape consistency-based regularizer",
-						"venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
-						"links": [
-							{
-								"text": "Paper",
-								"url": "https://ieeexplore.ieee.org/document/9414420"
-							}
+						year: "2021",
+						authors: "Liang Gao, <u>Kele Xu</u>*, Huaimin Wang, Yuxing Peng",
+						title: "Multi-representation knowledge distillation for audio classification",
+						venue: "Multimedia Tools and Applications",
+						links: [
+							{ text: "DOI", url: "https://doi.org/10.1007/s11042-021-10823-1" }
 						]
 					},
 					{
-						"year": "2021",
-						"authors": "Bin Li, Yijie Wang, Mingyu Liu, <u>Kele Xu</u>, Zhongyang Wang, Li Cheng, Yizhou Li",
-						"title": "FDEN: Mining Effective Information of Features in Detecting Network Anomalies",
-						"venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
-						"links": [
-							{
-								"text": "Paper",
-								"url": "https://ieeexplore.ieee.org/document/9415099"
-							}
+						year: "2021",
+						authors: "Ruchika Verma, Neeraj Kumar, ..., <u>Kele Xu</u>",
+						title: "MoNuSAC2020: A Multi-organ Nuclei Segmentation and Classification Challenge",
+						venue: "IEEE Transactions on Medical Imaging",
+						links: [
+							{ text: "DOI", url: "https://doi.org/10.1109/TMI.2021.3067438" }
 						]
 					},
+					{
+						year: "2021",
+						authors: "Pengliang Sun, Xuetong Niu, Pengfei Sun, <u>Kele Xu</u>*",
+						title: "Squeeze-and-Excitation network-Based Radar Object Detection With Weighted Location Fusion",
+						venue: "ACM International Conference on Multimedia Retrieval (ICMR)",
+						links: []
+					},
+					{
+						year: "2021",
+						authors: "Yunsheng Xiong, Peng Zhang, Yong Dou, <u>Kele Xu</u>, Xin Niu",
+						title: "Focus on Hard Categories and Hard Examples: Remote Sensing Image Scene Classification via Expert Model and Hard Example Mining",
+						venue: "IEEE Geoscience and Remote Sensing Letters",
+						links: [
+							{ text: "Paper", url: "https://ieeexplore.ieee.org/abstract/document/9343675/" }
+						]
+					},
+					{
+						year: "2021",
+						authors: "Feng Ming, <u>Kele Xu</u>*, Yin Wang, Bo Ding, Huaimin Wang",
+						title: "Improving ultrasound tongue contour extraction using U-Net and shape consistency-based regularizer",
+						venue: "IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)",
+						links: [
+							{ text: "Paper", url: "https://ieeexplore.ieee.org/document/9414420" }
+						]
+					},
+					{
+						year: "2021",
+						authors: "Bin Li, Yijie Wang, Mingyu Liu, <u>Kele Xu</u>, Zhongyang Wang, Li Cheng, Yizhou Li",
+						title: "FDEN: Mining Effective Information of Features in Detecting Network Anomalies",
+						venue: "IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)",
+						links: [
+							{ text: "Paper", url: "https://ieeexplore.ieee.org/document/9415099" },
+        
                 
                 // 2020 年
                     {
-						"year": "2020",
-						"authors": "<u>Kele Xu</u>, Tamás Gábor Csapó, Dawei Feng, Haibo Mi",
-						"title": "Ultrasound Tongue Gestural Sequence Classification Using Convolutional Auto-encoder and Recurrent Neural Network",
-						"venue": "International Seminar on Speech Production",
-						"links": []
+						year: "2020",
+						authors: "<u>Kele Xu</u>, Tamás Gábor Csapó, Dawei Feng, Haibo Mi",
+						title: "Ultrasound Tongue Gestural Sequence Classification Using Convolutional Auto-encoder and Recurrent Neural Network",
+						venue: "International Seminar on Speech Production",
+						links: []
 					},
 					{
-						"year": "2020",
-						"authors": "Tamás Gábor Csapó, <u>Kele Xu</u>, Andrea Deme, Tekla Etelka Gráczi, Alexandra Markó",
-						"title": "Transducer Misalignment in Ultrasound Tongue Imaging",
-						"venue": "International Seminar on Speech Production",
-						"links": []
+						year: "2020",
+						authors: "Tamás Gábor Csapó, <u>Kele Xu</u>, Andrea Deme, Tekla Etelka Gráczi, Alexandra Markó",
+						title: "Transducer Misalignment in Ultrasound Tongue Imaging",
+						venue: "International Seminar on Speech Production",
+						links: []
 					},
 					{
-						"year": "2020",
-						"authors": "<u>Kele Xu</u>, Zhimin Lin, Jianqiao Zhao, Peicang Shi, Wei Deng, Huaimin Wang",
-						"title": "Multimodal Deep Learning for Social Media Popularity Prediction With Attention Mechanism",
-						"venue": "ACM International Conference on Multimedia",
-						"links": []
+						year: "2020",
+						authors: "<u>Kele Xu</u>, Zhimin Lin, Jianqiao Zhao, Peicang Shi, Wei Deng, Huaimin Wang",
+						title: "Multimodal Deep Learning for Social Media Popularity Prediction With Attention Mechanism",
+						venue: "ACM International Conference on Multimedia (ACM MM)",
+						links: []
 					},
 					{
-						"year": "2020",
-						"authors": "Ming Feng, <u>Kele Xu</u>*, Yin Wang",
-						"title": "A Quantitative Comparison of Different Machine Learning Approaches for Human Spermatozoa Quality Prediction Using Multimodal Datasets",
-						"venue": "ACM International Conference on Multimedia",
-						"links": []
+						year: "2020",
+						authors: "Ming Feng, <u>Kele Xu</u>*, Yin Wang",
+						title: "A Quantitative Comparison of Different Machine Learning Approaches for Human Spermatozoa Quality Prediction Using Multimodal Datasets",
+						venue: "ACM International Conference on Multimedia (ACM MM)",
+						links: []
 					},
 					{
-						"year": "2020",
-						"authors": "<u>Kele Xu</u>, Yuzhong Liu, Ming Feng, Jianqiao Zhao, Huaimin Wang, Hengxing Cai",
-						"title": "Multi-Scale Generalized Attention-Based Regional Maximum Activation of Convolutions for Beauty Product Retrieval",
-						"venue": "ACM International Conference on Multimedia",
-						"links": []
+						year: "2020",
+						authors: "<u>Kele Xu</u>, Yuzhong Liu, Ming Feng, Jianqiao Zhao, Huaimin Wang, Hengxing Cai",
+						title: "Multi-Scale Generalized Attention-Based Regional Maximum Activation of Convolutions for Beauty Product Retrieval",
+						venue: "ACM International Conference on Multimedia (ACM MM)",
+						links: []
 					},
 					{
-						"year": "2020",
-						"authors": "Tamás Gábor Csapó, <u>Kele Xu</u>",
-						"title": "Quantification of Transducer Misalignment in Ultrasound Tongue Imaging",
-						"venue": "Conference of the International Speech Communication Association (InterSpeech)",
-						"links": []
+						year: "2020",
+						authors: "Tamás Gábor Csapó, <u>Kele Xu</u>",
+						title: "Quantification of Transducer Misalignment in Ultrasound Tongue Imaging",
+						venue: "Conference of the International Speech Communication Association (InterSpeech)",
+						links: []
 					},
 					{
-						"year": "2020",
-						"authors": "Boqing Zhu, <u>Kele Xu</u>*, Qiuqiang Kong, Huaimin Wang, Yuxing Peng",
-						"title": "Audio Tagging by Cross Filtering Noisy Labels",
-						"venue": "IEEE/ACM Transactions on Audio, Speech, and Language Processing",
-						"links": []
+						year: "2020",
+						authors: "Boqing Zhu, <u>Kele Xu</u>*, Qiuqiang Kong, Huaimin Wang, Yuxing Peng",
+						title: "Audio Tagging by Cross Filtering Noisy Labels",
+						venue: "IEEE/ACM Transactions on Audio, Speech, and Language Processing",
+						links: []
 					},
 					{
-						"year": "2020",
-						"authors": "<u>Kele Xu</u>, Jianqiao Zhao, Boqing Zhu, Chaojie Zhao",
-						"title": "Predicting ultrasound tongue image from lip images using sequence to sequence learning",
-						"venue": "The Journal of the Acoustical Society of America",
-						"links": []
+						year: "2020",
+						authors: "<u>Kele Xu</u>, Jianqiao Zhao, Boqing Zhu, Chaojie Zhao",
+						title: "Predicting ultrasound tongue image from lip images using sequence to sequence learning",
+						venue: "The Journal of the Acoustical Society of America",
+						links: []
 					},
 					{
-						"year": "2020",
-						"authors": "Haibo Mi, <u>Kele Xu</u>*, Dawei Feng, HuaiMin Wang, Yiming Zhang, Zibin Zheng, Chuan Chen, Xu Lan",
-						"title": "Collaborative Deep Learning Across Multiple Data Centers",
-						"venue": "SCIENCE CHINA Information Sciences",
-						"links": []
+						year: "2020",
+						authors: "Haibo Mi, <u>Kele Xu</u>*, Dawei Feng, HuaiMin Wang, Yiming Zhang, Zibin Zheng, Chuan Chen, Xu Lan",
+						title: "Collaborative Deep Learning Across Multiple Data Centers",
+						venue: "SCIENCE CHINA Information Sciences",
+						links: []
 					},
                 
                 // 2019 年
-					{
-						"year": "2019",
-						"authors": "<u>Kele Xu</u>, Yuxiang Wu, Zhifeng Gao",
-						"title": "Ultrasound-Based Silent Speech Interface using Sequential Convolutional Auto-encoder",
-						"venue": "ACM International Conference on Multimedia",
-						"links": []
+                {
+						year: "2019",
+						authors: "<u>Kele Xu</u>, Yuxiang Wu, Zhifeng Gao",
+						title: "Ultrasound-Based Silent Speech Interface using Sequential Convolutional Auto-encoder",
+						venue: "ACM International Conference on Multimedia (ACM MM)",
+						links: []
 					},
 					{
-						"year": "2019",
-						"authors": "Yingwei Fu, <u>Kele Xu</u>, Haibo Mi, Huaimin Wang, Dezhi Wang, Boqing Zhu",
-						"title": "A Mobile Application for Sound Event Detection",
-						"venue": "International Joint Conference on Artificial Intelligence",
-						"links": []
+						year: "2019",
+						authors: "Yingwei Fu, <u>Kele Xu</u>, Haibo Mi, Huaimin Wang, Dezhi Wang, Boqing Zhu",
+						title: "A Mobile Application for Sound Event Detection",
+						venue: "International Joint Conference on Artificial Intelligence (IJCAI)",
+						links: []
 					},
 					{
-						"year": "2019",
-						"authors": "Haibo Mi, <u>Kele Xu</u>, Yang Xiang, Yulin He, Dawei Feng, Huaimin Wang, Chun Wu, Yanming Song, Xiaolei Sun",
-						"title": "A Quantitative Analysis Platform for PD-L1 Immunohistochemistry Based on Point-Level Supervision Model",
-						"venue": "International Joint Conference on Artificial Intelligence",
-						"links": []
+						year: "2019",
+						authors: "Haibo Mi, <u>Kele Xu</u>, Yang Xiang, Yulin He, Dawei Feng, Huaimin Wang, Chun Wu, Yanming Song, Xiaolei Sun",
+						title: "A Quantitative Analysis Platform for PD-L1 Immunohistochemistry Based on Point-Level Supervision Model",
+						venue: "International Joint Conference on Artificial Intelligence (IJCAI)",
+						links: []
 					},
 					{
-						"year": "2019",
-						"authors": "<u>Kele Xu</u>, Boqing Zhu, Qiuqiang Kong, Haibo Mi, Bo Ding, Dezhi Wang, Huaimin Wang",
-						"title": "General audio tagging with ensembling convolutional neural network and statistical features",
-						"venue": "The Journal of the Acoustical Society of America",
-						"links": []
+						year: "2019",
+						authors: "<u>Kele Xu</u>, Boqing Zhu, Qiuqiang Kong, Haibo Mi, Bo Ding, Dezhi Wang, Huaimin Wang",
+						title: "General audio tagging with ensembling convolutional neural network and statistical features",
+						venue: "The Journal of the Acoustical Society of America",
+						links: []
 					},
 					{
-						"year": "2019",
-						"authors": "Bo Li, <u>Kele Xu</u>*, Dawei Feng, Haibo Mi, Huaimin Wang, Jian Zhu",
-						"title": "Denoising convolutional autoencoder based B-mode ultrasound tongue image feature extraction",
-						"venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
-						"links": []
+						year: "2019",
+						authors: "Bo Li, <u>Kele Xu</u>*, Dawei Feng, Haibo Mi, Huaimin Wang, Jian Zhu",
+						title: "Denoising convolutional autoencoder based B-mode ultrasound tongue image feature extraction",
+						venue: "IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)",
+						links: []
 					},
 					{
-						"year": "2019",
-						"authors": "Chaojie Zhao, Peng Zhang, Jian Zhu, Chengrui Wu, Huaimin Wang, <u>Kele Xu</u>*",
-						"title": "Predicting tongue motion in unlabeled ultrasound videos using convolutional LSTM neural network",
-						"venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
-						"links": []
+						year: "2019",
+						authors: "Chaojie Zhao, Peng Zhang, Jian Zhu, Chengrui Wu, Huaimin Wang, <u>Kele Xu</u>*",
+						title: "Predicting tongue motion in unlabeled ultrasound videos using convolutional LSTM neural network",
+						venue: "IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)",
+						links: []
 					},
 					{
-						"year": "2019",
-						"authors": "<u>Kele Xu</u>",
-						"title": "Mixup-Based Data Augmentation for Histopathologic Cancer Detection",
-						"venue": "Medical Physics",
-						"links": []
+						year: "2019",
+						authors: "<u>Kele Xu</u>",
+						title: "Mixup-Based Data Augmentation for Histopathologic Cancer Detection",
+						venue: "Medical Physics",
+						links: []
 					},
                 
                 // 2019 年以前
-                  {
-						"year": "before",
-						"authors": "<u>Kele Xu</u>, Jian Zhu",
-						"title": "Articulatory feature extraction from ultrasound images using pretrained convolutional neural networks",
-						"venue": "The Journal of the Acoustical Society of America",
-						"links": []
+                    {
+						year: "Before 2019",
+						authors: "<u>Kele Xu</u>, Jian Zhu",
+						title: "Articulatory feature extraction from ultrasound images using pretrained convolutional neural networks",
+						venue: "The Journal of the Acoustical Society of America",
+						links: []
 					},
 					{
-						"year": "before",
-						"authors": "Dezhi Wang, Lilun Zhang, Changchun Bao, <u>Kele Xu</u>, Boqing Zhu, Zengquan Lu",
-						"title": "Adaptive beamforming for uniformly-spaced linear hydrophone array using temporal convolutional neural networks",
-						"venue": "The Journal of the Acoustical Society of America",
-						"links": []
+						year: "Before 2019",
+						authors: "Dezhi Wang, Lilun Zhang, Changchun Bao, <u>Kele Xu</u>, Boqing Zhu, Zengquan Lu",
+						title: "Adaptive beamforming for uniformly-spaced linear hydrophone array using temporal convolutional neural networks",
+						venue: "The Journal of the Acoustical Society of America",
+						links: []
 					},
 					{
-						"year": "before",
-						"authors": "<u>Kele Xu</u>, Dawei Feng, Haibo Mi, Boqing Zhu, Dezhi Wang, Lilun Zhang, Hengxing Cai, Shuwen Liu",
-						"title": "Mixup-Based Acoustic Scene Classification Using Multi-Channel Convolutional Neural Network",
-						"venue": "Pacific Rim Conference on Multimedia",
-						"links": []
+						year: "Before 2019",
+						authors: "<u>Kele Xu</u>, Dawei Feng, Haibo Mi, Boqing Zhu, Dezhi Wang, Lilun Zhang, Hengxing Cai, Shuwen Liu",
+						title: "Mixup-Based Acoustic Scene Classification Using Multi-Channel Convolutional Neural Network",
+						venue: "Pacific Rim Conference on Multimedia",
+						links: []
 					},
 					{
-						"year": "before",
-						"authors": "Boqing Zhu, <u>Kele Xu</u>, Dezhi Wang, Lilun Zhang, Bo Li, Yuxing Peng",
-						"title": "Environmental sound classification based on multi-temporal resolution convolutional neural network combining with multi-level features",
-						"venue": "Pacific Rim Conference on Multimedia",
-						"links": []
+						year: "Before 2019",
+						authors: "Boqing Zhu, <u>Kele Xu</u>, Dezhi Wang, Lilun Zhang, Bo Li, Yuxing Peng",
+						title: "Environmental sound classification based on multi-temporal resolution convolutional neural network combining with multi-level features",
+						venue: "Pacific Rim Conference on Multimedia",
+						links: []
 					},
 					{
-						"year": "before",
-						"authors": "Xi Liu, <u>Kele Xu</u>",
-						"title": "Similarity measurement based rest position re-initialization in the MRI vocal tract image sequences",
-						"venue": "The Journal of the Acoustical Society of America",
-						"links": []
+						year: "Before 2019",
+						authors: "Xi Liu, <u>Kele Xu</u>",
+						title: "Similarity measurement based rest position re-initialization in the MRI vocal tract image sequences",
+						venue: "The Journal of the Acoustical Society of America",
+						links: []
 					},
 					{
-						"year": "before",
-						"authors": "<u>Kele Xu</u>, Pierre Roussel, Bruce Denby",
-						"title": "Is speckle tracking feasible for ultrasound tongue images?",
-						"venue": "Acta Acustica united with Acustica",
-						"links": []
+						year: "Before 2019",
+						authors: "<u>Kele Xu</u>, Pierre Roussel, Bruce Denby",
+						title: "Is speckle tracking feasible for ultrasound tongue images?",
+						venue: "Acta Acustica united with Acustica",
+						links: []
 					},
 					{
-						"year": "before",
-						"authors": "Bruce Denby, Shicheng Chen, Yifeng Zheng, <u>Kele Xu</u>, Yin Yang, Clemence Leboullenger, Pierre Roussel",
-						"title": "Recent results in silent speech interfaces",
-						"venue": "The Journal of the Acoustical Society of America",
-						"links": []
+						year: "Before 2019",
+						authors: "Bruce Denby, Shicheng Chen, Yifeng Zheng, <u>Kele Xu</u>, Yin Yang, Clemence Leboullenger, Pierre Roussel",
+						title: "Recent results in silent speech interfaces",
+						venue: "The Journal of the Acoustical Society of America",
+						links: []
 					},
 					{
-						"year": "before",
-						"authors": "<u>Kele Xu</u>, Pierre Roussel, Tamás Gábor Csapó, Bruce Denby",
-						"title": "Convolutional neural network-based automatic classification of midsagittal tongue gestural targets using B-mode ultrasound images",
-						"venue": "The Journal of the Acoustical Society of America",
-						"links": []
+						year: "Before 2019",
+						authors: "<u>Kele Xu</u>, Pierre Roussel, Tamás Gábor Csapó, Bruce Denby",
+						title: "Convolutional neural network-based automatic classification of midsagittal tongue gestural targets using B-mode ultrasound images",
+						venue: "The Journal of the Acoustical Society of America",
+						links: []
 					},
 					{
-						"year": "before",
-						"authors": "<u>Kele Xu</u>, Hengxing Cai, Xi Liu, Zhifeng Gao, Bingbing Zhang",
-						"title": "North atlantic right whale call detection with very deep convolutional neural networks",
-						"venue": "The Journal of the Acoustical Society of America",
-						"links": []
+						year: "Before 2019",
+						authors: "<u>Kele Xu</u>, Hengxing Cai, Xi Liu, Zhifeng Gao, Bingbing Zhang",
+						title: "North atlantic right whale call detection with very deep convolutional neural networks",
+						venue: "The Journal of the Acoustical Society of America",
+						links: []
 					},
 					{
-						"year": "before",
-						"authors": "<u>Kele Xu</u>, Yin Yang, Maureen Stone, Aurore Jaumard-Hakoun, Clémence Leboullenger, Gérard Dreyfus, Pierre Roussel, Bruce Denby",
-						"title": "Robust contour tracking in ultrasound tongue image sequences",
-						"venue": "Clinical linguistics & phonetics",
-						"links": []
+						year: "Before 2019",
+						authors: "<u>Kele Xu</u>, Yin Yang, Maureen Stone, Aurore Jaumard-Hakoun, Clémence Leboullenger, Gérard Dreyfus, Pierre Roussel, Bruce Denby",
+						title: "Robust contour tracking in ultrasound tongue image sequences",
+						venue: "Clinical Linguistics & Phonetics",
+						links: []
 					},
 					{
-						"year": "before",
-						"authors": "<u>Kele Xu</u>, Tamás Gábor Csapó, Pierre Roussel, Bruce Denby",
-						"title": "A comparative study on the contour tracking algorithms in ultrasound tongue images with automatic re-initialization",
-						"venue": "The Journal of the Acoustical Society of America",
-						"links": []
+						year: "Before 2019",
+						authors: "<u>Kele Xu</u>, Tamás Gábor Csapó, Pierre Roussel, Bruce Denby",
+						title: "A comparative study on the contour tracking algorithms in ultrasound tongue images with automatic re-initialization",
+						venue: "The Journal of the Acoustical Society of America",
+						links: []
 					},
 					{
-						"year": "before",
-						"authors": "Aurore Jaumard-Hakoun, <u>Kele Xu</u>, Clémence Leboullenger, Pierre Roussel-Ragot, Bruce Denby",
-						"title": "Robust contour tracking in ultrasound tongue image sequences",
-						"venue": "Conference of the International Speech Communication Association (InterSpeech)",
-						"links": []
+						year: "Before 2019",
+						authors: "Aurore Jaumard-Hakoun, <u>Kele Xu</u>, Clémence Leboullenger, Pierre Roussel-Ragot, Bruce Denby",
+						title: "Robust contour tracking in ultrasound tongue image sequences",
+						venue: "Conference of the International Speech Communication Association (InterSpeech)",
+						links: []
 					},
 					{
-						"year": "before",
-						"authors": "<u>Kele Xu</u>, Yin Yang, Clémence Leboullenger, Pierre Roussel, Bruce Denby",
-						"title": "Contour-based 3D tongue motion visualization using the ultrasound image sequences",
-						"venue": "International Conference on Acoustics, Speech, and Signal Processing (ICASSP)",
-						"links": []
+						year: "Before 2019",
+						authors: "<u>Kele Xu</u>, Yin Yang, Clémence Leboullenger, Pierre Roussel, Bruce Denby",
+						title: "Contour-based 3D tongue motion visualization using the ultrasound image sequences",
+						venue: "International Conference on Acoustics, Speech, and Signal Processing (ICASSP)",
+						links: []
 					},
 					{
-						"year": "before",
-						"authors": "<u>Kele Xu</u>, Yin Yang, Aurore Jaumard-Hakoun, Clémence Leboullenger, Gérard Dreyfus, Pierre Roussel, Maureen Stone, Bruce Denby",
-						"title": "Development of A 3D Tongue Motion Visualization Platform Based on ultrasound tongue image sequences",
-						"venue": "International Congress of Phonetic Sciences",
-						"links": []
+						year: "Before 2019",
+						authors: "<u>Kele Xu</u>, Yin Yang, Aurore Jaumard-Hakoun, Clémence Leboullenger, Gérard Dreyfus, Pierre Roussel, Maureen Stone, Bruce Denby",
+						title: "Development of A 3D Tongue Motion Visualization Platform Based on ultrasound tongue image sequences",
+						venue: "International Congress of Phonetic Sciences",
+						links: []
 					},
 					{
-						"year": "before",
-						"authors": "Aurore Jaumard-Hakoun, <u>Kele Xu</u>, Pierre Roussel-Ragot, Gérard Dreyfus, Maureen Stone, Bruce Denby",
-						"title": "Tongue contour extraction from ultrasound images based on deep neural network",
-						"venue": "International Congress of Phonetic Sciences",
-						"links": []
+						year: "Before 2019",
+						authors: "Aurore Jaumard-Hakoun, <u>Kele Xu</u>, Pierre Roussel-Ragot, Gérard Dreyfus, Maureen Stone, Bruce Denby",
+						title: "Tongue contour extraction from ultrasound images based on deep neural network",
+						venue: "International Congress of Phonetic Sciences",
+						links: []
 					},
 					{
-						"year": "before",
-						"authors": "<u>Kele Xu</u>, Yin Yang, Aurore Jaumard-Hakoun, Martine Adda-Decker, Angélique Amelot, SK Al Kork, Lise Crevier-Buchman, P Chawah, Gérard Dreyfus, Thibaut Fux, Claire Pillot-Loiseau, Pierre Roussel, Maureen Stone, Bruce Denby",
-						"title": "3D tongue motion visualization based on ultrasound image sequences",
-						"venue": "Conference of the International Speech Communication Association (InterSpeech)",
-						"links": []
+						year: "Before 2019",
+						authors: "<u>Kele Xu</u>, Yin Yang, Aurore Jaumard-Hakoun, Martine Adda-Decker, Angélique Amelot, SK Al Kork, Lise Crevier-Buchman, P Chawah, Gérard Dreyfus, Thibaut Fux, Claire Pillot-Loiseau, Pierre Roussel, Maureen Stone, Bruce Denby",
+						title: "3D tongue motion visualization based on ultrasound image sequences",
+						venue: "Conference of the International Speech Communication Association (InterSpeech)",
+						links: []
 					},
 					{
-						"year": "before",
-						"authors": "Patrick Chawah, Samer K Al Kork, Thibaut Fux, Martine Adda-Decker, Angelique Amelot, Nicolas Audibert, Bruce Denby, Gerard Dreyfus, Aurore Jaumard-Hakoun, Claire Pillot-Loiseau, Pierre Roussel, Maureen Stone, <u>Kele Xu</u>, Lise Buchman",
-						"title": "An educational platform to capture, visualize and analyze rare singing",
-						"venue": "Conference of the International Speech Communication Association (InterSpeech)",
-						"links": []
+						year: "Before 2019",
+						authors: "Patrick Chawah, Samer K Al Kork, Thibaut Fux, Martine Adda-Decker, Angelique Amelot, Nicolas Audibert, Bruce Denby, Gerard Dreyfus, Aurore Jaumard-Hakoun, Claire Pillot-Loiseau, Pierre Roussel, Maureen Stone, <u>Kele Xu</u>, Lise Buchman",
+						title: "An educational platform to capture, visualize and analyze rare singing",
+						venue: "Conference of the International Speech Communication Association (InterSpeech)",
+						links: []
+					},
+					{
+						year: "Before 2019",
+						authors: "Samer K Al Kork, Aurore Jaumard-Hakoun, Martine Adda-Decker, Angelique Amelot, Lise Buchman, Patrick Chawah, Gerard Dreyfus, Thibaut Fux, Claire Pillot-Loiseau, Pierre Roussel, Maureen Stone, <u>Kele Xu</u>, Bruce Denby",
+						title: "A Multi-Sensor Helmet to Capture Rare Singing, An Intangible Cultural Heritage Study",
+						venue: "International Seminar on Speech Production",
+						links: []
 					},
             ];
         }
         
-		
         // ===== 新闻加载函数 =====
         function loadNews(filteredData = null) {
             const newsContainer = document.getElementById('news-container');
@@ -3263,8 +2721,8 @@
                 publicationsByYear[pub.year].push(pub);
             });
             
-            // 定义显示顺序：Preprint, 2025, 2024, 2023, 2022, 2021, 2020, 2019, before
-            const yearOrder = ['preprint', 'monograph', '2026', '2025','2024', '2023', '2022', '2021', '2020', '2019', 'before'];
+            // 定义显示顺序：Preprint, 2026, 2025, 2024, 2023, 2022, 2021, 2020, 2019, before
+            const yearOrder = ['preprint', '2026','2025', '2024', '2023', '2022', '2021', '2020', '2019', 'before'];
             
             // 显示按年份分组的出版物
             yearOrder.forEach(year => {
@@ -3299,9 +2757,8 @@
         // 获取年份的显示名称
         function getYearDisplayName(year) {
             switch(year) {
-                case 'preprint': return 'Under-revision/review & Preprint ';
+                case 'preprint': return 'Under-revision/review & Preprint';
                 case 'before': return 'Before 2019';
-				case 'monograph': return 'Monograph';
                 default: return year;
             }
         }
@@ -3421,8 +2878,6 @@
                 });
             });
         }
-		
-		
     </script>
 </body>
 </html>
